@@ -11,6 +11,8 @@ import sliderImg02 from "../assets/images/slider-img-03.png";
 import sliderImg03 from "../assets/images/slider-img-04.png";
 import sliderImg04 from "../assets/images/slider-img-05.png";
 
+import { Customowlslide } from "../assets/style";
+
 const Owlslider = () => {
   const options = {
     loop: true,
@@ -37,43 +39,45 @@ const Owlslider = () => {
   return (
     <>
       <div className="owlcarousel_Wrapper">
-        <OwlCarousel className="owl-theme" {...options}>
-          <div class="item">
-            <img src={sliderImg} />
-            <div className="slider_Content">
-              <h4> Hamburg </h4>
-              <p> 2023 </p>
+        <Customowlslide>
+          <OwlCarousel className="owl-theme" {...options}>
+            <div class="item">
+              <img src={sliderImg} />
+              <div className="slider_Content">
+                <h4> Hamburg </h4>
+                <p> 2023 </p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img src={sliderImg01} />
-            <div className="slider_Content">
-              <h4> Hamburg </h4>
-              <p> 2023 </p>
+            <div class="item">
+              <img src={sliderImg01} />
+              <div className="slider_Content">
+                <h4> Hamburg </h4>
+                <p> 2023 </p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img src={sliderImg02} />
-            <div className="slider_Content">
-              <h4> Hamburg </h4>
-              <p> 2023 </p>
+            <div class="item">
+              <img src={sliderImg02} />
+              <div className="slider_Content">
+                <h4> Hamburg </h4>
+                <p> 2023 </p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img src={sliderImg03} />
-            <div className="slider_Content">
-              <h4> Hamburg </h4>
-              <p> 2023 </p>
+            <div class="item">
+              <img src={sliderImg03} />
+              <div className="slider_Content">
+                <h4> Hamburg </h4>
+                <p> 2023 </p>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <img src={sliderImg04} />
-            <div className="slider_Content">
-              <h4> Hamburg </h4>
-              <p> 2023 </p>
+            <div class="item">
+              <img src={sliderImg04} />
+              <div className="slider_Content">
+                <h4> Hamburg </h4>
+                <p> 2023 </p>
+              </div>
             </div>
-          </div>
-        </OwlCarousel>
+          </OwlCarousel>
+        </Customowlslide>
       </div>
     </>
   );

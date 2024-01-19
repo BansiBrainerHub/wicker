@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import BindingbtnImg from "../assets/images/bindingBtn.png";
 
-export const MainIndexpage = styled.div`
-  margin-bottom: 40px;
-`;
+// images
+
+import BindingbtnImg from "../assets/images/bindingBtn.png";
+import Arrow1 from "../assets/images/arrow1.png";
+
+export const MainIndexpage = styled.div``;
 
 export const Headerwrapper = styled.div`
   position: relative;
@@ -692,11 +694,29 @@ export const Customserviceslider = styled.div`
       border-radius: 4px;
     }
   }
+  // .owl-nav {
+  //   display: block;
+  //   margin-top: 50px;
+  //   clear: both;
+  //   text-align: right;
+  // }
   .owl-nav {
     display: block;
     margin-top: 50px;
     clear: both;
     text-align: right;
+    .nav-btn {
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 15px;
+      &.prev-slide {
+        background: url(${Arrow1});
+        transform: scale(-1);
+      }
+      &.next-slide {
+        background: url(${Arrow1});
+      }
+    }
   }
   .active {
     .serviceitem {
@@ -709,6 +729,40 @@ export const Customserviceslider = styled.div`
       p {
         color: #111725;
       }
+    }
+  }
+`;
+
+// owlslide css start
+
+export const Customowlslide = styled.div`
+  margin-top: 240px;
+  .owl-nav {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 40px;
+    span {
+      color: #fff;
+    }
+  }
+  .slider_Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    h4 {
+      color: #fff;
+      font-size: 28px;
+      line-height: 57px;
+      font-weight: 400;
+      font-family: "Helvetica", sans-serif;
+    }
+    p {
+      color: #fff;
+      font-size: 20px;
+      line-height: 27px;
+      font-family: "HelveticaNeue", sans-serif;
+      color: #fff;
     }
   }
 `;

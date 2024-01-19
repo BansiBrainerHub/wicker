@@ -4,8 +4,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "../assets/common-style.css";
 
-import Arrow1 from "../assets/images/arrow1.png";
-
 import { Customserviceslider } from "../assets/style";
 
 const serviceowlslider = () => {
@@ -20,8 +18,8 @@ const serviceowlslider = () => {
     singleItem: true,
     nav: true,
     navText: [
-      "<img src='../assets/images/arrow1.png' />",
-      "<img src='../assets/images/arrow1.png' />",
+      "<div class='nav-btn prev-slide'></div>",
+      "<div class='nav-btn next-slide'></div>",
     ],
     responsive: {
       0: {
