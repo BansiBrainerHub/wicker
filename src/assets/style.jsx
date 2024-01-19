@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import BindingbtnImg from "../assets/images/bindingBtn.png";
 
 export const MainIndexpage = styled.div`
   margin-bottom: 40px;
@@ -21,19 +22,20 @@ export const Container = styled.div`
 `;
 
 export const DBindingwrapper = styled.div`
-  max-width: 325px;
-  width: 100%;
-  height: 325px;
-  border-radius: 100%;
-  background-color: #000;
+  // max-width: 325px;
+  // width: 100%;
+  // height: 325px;
+  // border-radius: 100%;
+  // background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: -40px;
-  top: -80px;
+  right: 0px;
+  top: 0px;
   padding-top: 80px;
   transition: 0.4s all ease-in-out;
+  background: url(${BindingbtnImg});
   p {
     color: #fff;
     font-size: 25px;
@@ -559,5 +561,154 @@ export const Ftcontactseciton = styled.div`
   }
   img {
     width: 28px;
+  }
+`;
+
+// accordian css
+
+export const Customaccordian = styled.div`
+  position: relative;
+  z-index: 9;
+  .accordion__panel {
+    padding: 20px 0px;
+    p {
+      margin-bottom: 24px;
+      color: #000;
+      font-size: 20px;
+      font-weight: 200;
+    }
+  }
+  .accordion__button {
+    padding-left: 0px;
+    padding-right: 0px;
+    position: relative;
+    font-size: 30px;
+    line-height: 48px;
+    font-family: "visbycf", sans-serif;
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+    }
+    &:before {
+      display: inline-block;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-right: 2px solid #111725;
+      border-bottom: none;
+      transform: rotate(90deg);
+      position: absolute;
+      margin-right: 0px;
+      right: 7px;
+      z-index: 9;
+      top: 40%;
+    }
+    &:after {
+      display: inline-block;
+      content: "";
+      height: 16px;
+      width: 16px;
+      border-bottom: 2px solid #111725;
+      transform: rotate(90deg);
+      position: absolute;
+      right: 0px;
+      top: 48%;
+      z-index: 9;
+    }
+  }
+  .accordion {
+    border: none;
+  }
+  .accordion__item {
+    border-bottom: 2px solid #111725;
+  }
+  .accordion__button[aria-expanded="true"],
+  .accordion__button[aria-selected="true"] {
+    &:before {
+      transform: rotate(90deg);
+    }
+  }
+  .accordion__button[aria-expanded="true"],
+  .accordion__button[aria-selected="true"] {
+    &:after {
+      display: none;
+    }
+  }
+`;
+
+// service slider css start
+
+export const Customserviceslider = styled.div`
+  h5 {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 31px;
+    margin-top: 24px;
+    color: #bdbdbd;
+    font-family: "visbycf", sans-serif;
+    span {
+      font-family: "Helvetica", sans-serif;
+      font-weight: 400;
+    }
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #bdbdbd;
+    font-family: "visbycf", sans-serif;
+    span {
+      font-family: "Helvetica", sans-serif;
+      font-weight: 400;
+    }
+  }
+  h3 {
+    font-size: 90px;
+    font-weight: 400;
+    position: relative;
+    color: #bdbdbd;
+    font-family: "Helvetica", sans-serif;
+    background-color: #fff;
+    display: inline-block;
+    padding-right: 25px;
+  }
+  .item {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 55px;
+      width: 100%;
+      height: 3px;
+      background-color: #bdbdbd;
+    }
+  }
+  .owl-next {
+    span {
+      background: #000;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+  }
+  .owl-nav {
+    display: block;
+    margin-top: 50px;
+    clear: both;
+    text-align: right;
+  }
+  .active {
+    .serviceitem {
+      h5 {
+        color: #111725;
+      }
+      h3 {
+        color: #111725;
+      }
+      p {
+        color: #111725;
+      }
+    }
   }
 `;

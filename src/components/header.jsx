@@ -26,7 +26,7 @@ const header = () => {
           {/* <Bindingbtn>
             <img src={BindingbtnImg} alt="bindingImg" />
           </Bindingbtn> */}
-          <DBindingwrapper>
+          <DBindingwrapper style={{}}>
             <Bindingcontent>
               <p>unverbindliche Beratung</p>
               <img src={Rightarrow} />

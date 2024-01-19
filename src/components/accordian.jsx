@@ -8,11 +8,12 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
+import { Customaccordian } from "../assets/style";
 
 const accordian = () => {
   return (
     <>
-      <div className="accordian_section_wrapper">
+      <Customaccordian>
         <Accordion>
           <AccordionItem>
             <AccordionItemHeading>
@@ -179,7 +180,7 @@ const accordian = () => {
             </AccordionItemPanel>
           </AccordionItem>
         </Accordion>
-      </div>
+      </Customaccordian>
     </>
   );
 };
