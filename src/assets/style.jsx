@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 import BindingbtnImg from "../assets/images/bindingBtn.png";
 import Arrow1 from "../assets/images/arrow1.png";
+import Arrow2 from "../assets/images/arrow2.png";
+import ArrowBG from "../assets/images/arrow-bg.png";
 
 export const MainIndexpage = styled.div``;
 
@@ -24,11 +26,6 @@ export const Container = styled.div`
 `;
 
 export const DBindingwrapper = styled.div`
-  // max-width: 325px;
-  // width: 100%;
-  // height: 325px;
-  // border-radius: 100%;
-  // background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,6 +35,10 @@ export const DBindingwrapper = styled.div`
   padding-top: 80px;
   transition: 0.4s all ease-in-out;
   background: url(${BindingbtnImg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 42px;
+  padding-top: 82px;
   p {
     color: #fff;
     font-size: 25px;
@@ -686,6 +687,12 @@ export const Customserviceslider = styled.div`
       background-color: #bdbdbd;
     }
   }
+  .owl-item {
+    &.active + .active {
+      opacity: 0.3;
+    }
+  }
+
   .owl-next {
     span {
       background: #000;
@@ -693,13 +700,16 @@ export const Customserviceslider = styled.div`
       padding: 8px 16px;
       border-radius: 4px;
     }
+    &.disabled {
+      opacity: 0;
+    }
   }
-  // .owl-nav {
-  //   display: block;
-  //   margin-top: 50px;
-  //   clear: both;
-  //   text-align: right;
-  // }
+  .owl-prev {
+    &.disabled {
+      opacity: 0;
+    }
+  }
+
   .owl-nav {
     display: block;
     margin-top: 50px;
@@ -707,7 +717,7 @@ export const Customserviceslider = styled.div`
     text-align: right;
     .nav-btn {
       background-repeat: no-repeat;
-      width: 16px;
+      width: 18px;
       height: 15px;
       &.prev-slide {
         background: url(${Arrow1});
@@ -715,6 +725,13 @@ export const Customserviceslider = styled.div`
       }
       &.next-slide {
         background: url(${Arrow1});
+      }
+    }
+    button {
+      background-color: #000 !important;
+      padding: 10px !important;
+      &:hover {
+        background: #000 !important;
       }
     }
   }
@@ -734,15 +751,76 @@ export const Customserviceslider = styled.div`
 `;
 
 // owlslide css start
-
 export const Customowlslide = styled.div`
   margin-top: 240px;
+
+  .owl-prev {
+    &.disabled {
+      opacity: 0.6;
+      .nav-btn {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+  .owl-next {
+    &.disabled {
+      opacity: 0.6;
+      .nav-btn {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
   .owl-nav {
-    display: inline-block;
     margin-top: 50px;
     margin-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 56px;
+    button {
+      &:hover {
+        background: transparent !important;
+      }
+    }
     span {
       color: #fff;
+    }
+    .nav-btn {
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 22px;
+      position: relative;
+      &.prev-slide {
+        background: url(${Arrow2});
+        transform: scale(-1);
+        &:before {
+          content: "";
+          width: 78px;
+          height: 39px;
+          position: absolute;
+          left: calc(50% - 38px);
+          top: auto;
+          bottom: 0;
+          transform: scale(-1);
+          background: url(${ArrowBG});
+        }
+      }
+      &.next-slide {
+        background: url(${Arrow2});
+        &:before {
+          content: "";
+          width: 78px;
+          height: 39px;
+          position: absolute;
+          left: calc(50% - 38px);
+          top: 0;
+          background: url(${ArrowBG});
+        }
+      }
     }
   }
   .slider_Content {
