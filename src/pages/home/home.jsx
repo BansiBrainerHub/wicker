@@ -37,6 +37,9 @@ import {
   Bindingwrapper,
   Bindingcontent,
   Containerfluid,
+  Mobileview,
+  Desktopview,
+  MobilebannerContent,
 } from "../../assets/style";
 
 // images
@@ -55,35 +58,58 @@ const home = () => {
         {/* banner section start  */}
         <Headerbanner>
           <Container>
-            <Row>
-              <Column>
-                <Bannerheading>
+              <Bannerheading>
                   <h2> Generationen verbinden, Vermögen gestalten </h2>
                 </Bannerheading>
-              </Column>
-            </Row>
-            <Row className="banner_alignment">
-              <Column>
-                <Bannerleftcontent>
-                  <p>
-                    Wicker <span>&</span> Partner <span>-</span> Seit zwei
-                    Generationen <strong> Ihr Partner </strong> im nachhaltigen
-                    Aufbau von Privatvermögen durch innovative
-                    Immobilienlösungen.
-                  </p>
-                </Bannerleftcontent>
-              </Column>
-              <Column>
+            
+            <Desktopview>
+              <Row className="banner_alignment">
+                <Column>
+                  <Bannerleftcontent>
+                    <p>
+                      Wicker <span>&</span> Partner <span>-</span> Seit zwei
+                      Generationen <strong> Ihr Partner </strong> im nachhaltigen
+                      Aufbau von Privatvermögen durch innovative
+                      Immobilienlösungen.
+                    </p>
+                  </Bannerleftcontent>
+                </Column>
+                <Column>
+                  <Topbannerimg>
+                    <img src={headerbnnerImg} />
+                  </Topbannerimg>
+                </Column>
+                <Column>
+                  <Bannerrightcontent>
+                    <p>Mit Immobilien Werte schaffen.</p>
+                  </Bannerrightcontent>
+                </Column>
+              </Row>
+            </Desktopview>
+            <Mobileview>
                 <Topbannerimg>
                   <img src={headerbnnerImg} />
                 </Topbannerimg>
-              </Column>
-              <Column>
-                <Bannerrightcontent>
-                  <p>Mit Immobilien Werte schaffen.</p>
-                </Bannerrightcontent>
-              </Column>
-            </Row>
+                <MobilebannerContent>
+                  <Row className="justif_content">
+                    <Column>
+                      <Bannerleftcontent>
+                        <p>
+                          Wicker <span>&</span> Partner <span>-</span> Seit zwei
+                          Generationen <strong> Ihr Partner </strong> im nachhaltigen
+                          Aufbau von Privatvermögen durch innovative
+                          Immobilienlösungen.
+                        </p>
+                      </Bannerleftcontent>
+                    </Column>
+                      <Column>
+                        <Bannerrightcontent>
+                          <p>Mit Immobilien Werte schaffen.</p>
+                        </Bannerrightcontent>
+                      </Column>
+                  </Row>
+                  </MobilebannerContent>
+            </Mobileview>
           </Container>
         </Headerbanner>
         {/* banner section end  */}
@@ -136,12 +162,12 @@ const home = () => {
         <Companyblog>
           <Container>
             <Row className="align-item-center">
-              <Column className="col-md-5 col-12">
+              <Column className="col-lg-5 col-md-4">
                 <Companylogo>
                   <img src={logoimage} />
                 </Companylogo>
               </Column>
-              <Column className="col-md-7 col-12">
+              <Column className="col-lg-7 col-md-8">
                 <Copanyblogcontent>
                   <p>
                     In einer Welt, die ständigen Veränderungen unterworfen ist,
@@ -155,6 +181,8 @@ const home = () => {
                   </p>
                 </Copanyblogcontent>
               </Column>
+            </Row>
+            <Row>
               <Column className="col-12">
                 <Borderline>
                   <hr />

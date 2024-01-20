@@ -22,7 +22,7 @@ const footer = () => {
     <>
       <Footersection>
         <Row className="align_end">
-          <Column className="col-md-6 col-12">
+          <Column className="col-lg-7 col-md-6 col-12">
             <Footerinfo>
               <h2> Beratung anfragen </h2>
               <p>
@@ -60,7 +60,7 @@ const footer = () => {
               </Checkbox>
             </Footerinfo>
           </Column>
-          <Column className="col-md-6 col-12">
+          <Column className="col-lg-5 col-md-6 col-12">
             <Row>
               <Column className="col-md-6 col-12">
                 <Quicklinks>

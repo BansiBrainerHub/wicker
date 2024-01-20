@@ -7,13 +7,28 @@ import Arrow1 from "../assets/images/arrow1.png";
 import Arrow2 from "../assets/images/arrow2.png";
 import ArrowBG from "../assets/images/arrow-bg.png";
 
+export const Media = {
+  xxl: "@media(max-width:1600px)",
+  xl: "@media(max-width:1440px)",
+  lg: "@media(max-width:1200px)",
+  md: "@media(max-width:992px)",
+  sm: "@media(max-width:768px)",
+  ss: "@media(max-width:640px)",
+  xs: "@media(max-width:480px)",
+  xxs: "@media(max-width:404px)",
+};
+
 export const MainIndexpage = styled.div``;
 
-export const Headerwrapper = styled.div`
+export const Headerwrapper = styled.div` 
   position: relative;
   padding-left: 85px;
   padding-right: 85px;
   padding-top: 64px;
+  ${Media.md} {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 `;
 export const Container = styled.div`
   max-width: 1440px;
@@ -39,6 +54,10 @@ export const DBindingwrapper = styled.div`
   background-size: cover;
   padding: 42px;
   padding-top: 82px;
+  ${Media.ss} {
+    padding: 32px;
+    padding-top: 32px;
+  }
   p {
     color: #fff;
     font-size: 25px;
@@ -72,12 +91,17 @@ export const Bindingbtn = styled.div`
 
 export const Headerbanner = styled.div`
   margin-top: 40px;
+  ${Media.sm} {
+    margin-top: 80px;
+  }
 `;
 export const Row = styled.div`
   display: flex;
-  flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  ${Media.sm} {
+    flex-wrap: wrap;
+  }
 `;
 export const Column = styled.div`
   padding-left: 15px;
@@ -91,6 +115,15 @@ export const Topbannerimg = styled.div`
   img {
     width: 100%;
   }
+  ${Media.lg} {
+    max-width: 500px;
+  }
+  ${Media.md} {
+    max-width: 400px;
+  }
+  ${Media.sm} {
+    max-width: 100%;
+  }
 `;
 export const Bannerheading = styled.div`
   position: relative;
@@ -103,12 +136,82 @@ export const Bannerheading = styled.div`
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: "visbycf", sans-serif;
+    ${Media.lg} {
+      font-size: 68px;
+    line-height: 78px;
+    }
+    ${Media.md} {
+      font-size: 48px;
+    line-height: 48px;
+    }
+    ${Media.sm} {
+      font-size: 36px;
+    line-height: 48px;
+    }
+    ${Media.ss} {
+      font-size: 32px;
+    line-height: 35px;
+    }
   }
+  ${Media.lg} {
+    margin-left:90px;
+    margin-right:90px;
+    margin-bottom: -18px;
+  }
+  ${Media.sm} {
+    max-width: 500px;
+    margin: 0 auto -20px;
+  }
+  ${Media.ss} {
+    max-width: 500px;
+    margin: 0 auto -16px;
+  }
+  
+
 `;
+export const Desktopview = styled.div`
+${Media.sm} {
+ display:none;
+}
+`;
+export const Mobileview = styled.div`
+display:none;
+${Media.sm} {
+ display:block;
+ padding-left: 30px;
+    padding-right: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+${Media.ss} {
+  padding-left: 15px;
+     padding-right: 15px;
+ }
+`;
+
+export const MobilebannerContent = styled.div`
+max-width:700px;
+margin:20px auto 0;
+.justif_content {
+  justify-content:space-between;
+  align-items: center;
+}
+`;
+
+
 export const Bannerleftcontent = styled.div`
   max-width: 188px;
   width: 100%;
   margin-right: 30px;
+  ${Media.lg} {
+    margin-right: 20px;
+  }
+  ${Media.md} {
+    margin-right: -19px;
+  }
+  ${Media.sm} {
+    margin-right: 0px;
+  }
 
   p {
     font-size: 20px;
@@ -116,7 +219,15 @@ export const Bannerleftcontent = styled.div`
     span {
       font-family: "Helvetica", sans-serif;
     }
+    ${Media.lg} {
+      font-size: 18px;
+      max-width: 150px;
+    }
+    ${Media.md} {
+      font-size: 16px;
+    }
   }
+  
 `;
 export const Bannerrightcontent = styled.div`
   max-width: 145px;
@@ -125,6 +236,22 @@ export const Bannerrightcontent = styled.div`
   p {
     font-size: 20px;
     font-family: "visbycf", sans-serif;
+    ${Media.lg} {
+      font-size: 18px;
+      
+    }
+    ${Media.md} {
+      font-size: 16px;
+    }
+  }
+  ${Media.lg} {
+    margin-left: 40px;
+  }
+  ${Media.md} {
+    margin-left: -19px;
+  }
+  ${Media.sm} {
+    margin-left: 0px;
   }
 `;
 
@@ -134,6 +261,15 @@ export const Containerfluid = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   margin-left: 110px;
+  ${Media.lg} {
+    margin-left: 70px;
+  }
+  ${Media.md} {
+    margin-left: 50px;
+  }
+  ${Media.sm} {
+    margin-left: 30px;
+  }
 `;
 
 export const Aboutwrapper = styled.div`
@@ -142,6 +278,15 @@ export const Aboutwrapper = styled.div`
 
 export const Aboutheading = styled.div`
   margin-right: 150px;
+  ${Media.lg} {
+    margin-right: 100px;
+  }
+  ${Media.md} {
+    margin-right: 65px;
+  }
+  ${Media.sm} {
+    margin-right: 25px;
+  }
   h3 {
     font-size: 64px;
     font-weight: 400;
@@ -157,6 +302,10 @@ export const Aboutheading = styled.div`
     font-family: "visbycf", sans-serif;
     span {
       font-family: "Helvetica", sans-serif;
+    }
+    ${Media.md} {
+      font-size: 16px;
+      margin-bottom: 30px;
     }
   }
   a {
@@ -185,6 +334,12 @@ export const Innovationcontent = styled.div`
     color: #fff;
     margin-bottom: 5px;
     font-family: "visbycf", sans-serif;
+    ${Media.lg} {
+      font-size: 30px;
+    }
+    ${Media.lg} {
+      font-size: 24px;
+    }
   }
   h3 {
     font-size: 40px;
@@ -195,6 +350,12 @@ export const Innovationcontent = styled.div`
     span {
       font-family: "Helvetica", sans-serif;
       font-weight: 500;
+    }
+    ${Media.lg} {
+      font-size: 30px;
+    }
+    ${Media.md} {
+      font-size: 24px;
     }
   }
   a {
@@ -214,21 +375,43 @@ export const Innovationcontent = styled.div`
 export const Companyblog = styled.div`
   margin-top: 150px;
   margin-bottom: 88px;
+  ${Media.md} {
+    margin-top: 88px;
+  margin-bottom: 0px;
+  }
+  ${Media.sm} {
+    margin-left:30px;
+    margin-right:30px;
+  }
 `;
 
 export const Companylogo = styled.div`
   margin-left: 85px;
+  ${Media.md} {
+    margin-left: 60px;
+  }
   img {
     max-width: 188px;
     width: 100%;
+    ${Media.md} {
+      max-width: 116px;
+    }
   }
 `;
 
 export const Copanyblogcontent = styled.div`
+
+${Media.md} {
+  margin-right:40px;
+}
+
   p {
     font-size: 25px;
     color: #111725;
     font-family: "visbycf", sans-serif;
+    ${Media.md} {
+      font-size: 18px;
+    }
   }
   p:first-child {
     margin-bottom: 40px;
@@ -237,26 +420,47 @@ export const Copanyblogcontent = styled.div`
 export const Borderline = styled.div`
   margin-top: 88px;
   margin-bottom: 128px;
+  max-width:1200px;
+  margin-left:auto;
+  margin-right:auto;
+  ${Media.md} {
+    max-width:850px;
+    margin:89px auto;
+  }
 `;
 
-export const Teamsection = styled.div``;
+export const Teamsection = styled.div`
+${Media.sm} {
+  margin-left:30px;
+  margin-right:30px;
+}
+`;
 export const TeamColumn = styled.div``;
 
 export const Teamcard = styled.div`
   img {
     width: 100%;
   }
+  ${Media.sm} {
+    margin-bottom:30px;
+  }
 `;
 
 export const Teamcardcontent = styled.div`
   padding-top: 20px;
   padding-left: 16px;
+  ${Media.md} {
+      padding-left: 0px;
+  }
   h4 {
     font-size: 20px;
     margin-bottom: 8px;
     line-height: 47px;
     font-weight: 400;
     font-family: "visbycf", sans-serif;
+    ${Media.md} {
+      font-size: 16px;
+  }
   }
   h3 {
     font-size: 40px;
@@ -264,6 +468,9 @@ export const Teamcardcontent = styled.div`
     margin-bottom: 8px;
     font-family: "visbycf", sans-serif;
     font-weight: 400;
+    ${Media.md} {
+      font-size: 24px;
+  }
   }
   p {
     font-size: 16px;
@@ -273,11 +480,23 @@ export const Teamcardcontent = styled.div`
       font-family: "Helvetica", sans-serif;
       font-weight: 400;
     }
+    ${Media.md} {
+      font-size: 12px;
+  }
   }
 `;
 
 export const Teamdiscription = styled.div`
   padding-left: 60px;
+  ${Media.md} {
+    padding-left: 0px;
+    margin-right:55px;
+    margin-left:-15px;
+  }
+  ${Media.sm} {
+    margin-right:0px;
+    margin-left:0px;
+  }
   p {
     margin-bottom: 40px;
     font-size: 16px;
@@ -285,6 +504,11 @@ export const Teamdiscription = styled.div`
     font-family: "visbycf", sans-serif;
     span {
       font-family: "Helvetica", sans-serif;
+    }
+    ${Media.md} {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 30px;
     }
   }
 `;
@@ -294,6 +518,10 @@ export const Slidersection = styled.div`
   margin-top: 110px;
   padding-top: 203px;
   padding-bottom: 300px;
+  ${Media.sm} {
+    padding-top: 100px;
+    margin-top: 40px;
+  }
 `;
 
 export const Quotesection = styled.div`
@@ -311,7 +539,12 @@ export const Quotesection = styled.div`
     display: inline;
     line-height: 48px;
     font-family: "visbycf", sans-serif;
+    ${Media.sm} {
+     font-size:20px;
+     line-height:32px;
+    }
   }
+
 `;
 
 export const Owlslider = styled.div``;
@@ -324,6 +557,11 @@ export const Faqwrapper = styled.div`
   background: #fff;
   padding: 50px 60px;
   border-radius: 20px;
+  ${Media.sm} {
+    padding: 36px 20px 80px;
+    margin-left: 40px;
+  margin-right: 40px;
+   }
   &:before {
     content: "";
     position: absolute;
@@ -349,6 +587,12 @@ export const Faqheader = styled.div`
       font-family: "Helvetica", sans-serif;
       font-weight: 300;
     }
+    ${Media.md} {
+      font-size: 51px;
+    }
+    ${Media.md} {
+      font-size: 28px;
+    }
   }
   p {
     font-size: 23px;
@@ -356,6 +600,13 @@ export const Faqheader = styled.div`
     margin-bottom: 15px;
     color: #828282;
     font-family: "visbycf", sans-serif;
+    ${Media.md} {
+      font-size: 16px;
+    }
+    ${Media.sm} {
+      font-size: 11px;
+      line-height:14px;
+    }
   }
   :last-child {
     margin-bottom: 50px;
@@ -374,11 +625,18 @@ export const Bindingwrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: -40px;
+  ${Media.md} {
+    max-width: 225px;
+  height: 225px;
+  }
 
   p {
     color: #fff;
     font-size: 25px;
     font-family: "visbycf", sans-serif;
+    ${Media.md} {
+      font-size: 20px;
+    }
   }
   img {
     width: 40px;
@@ -388,6 +646,10 @@ export const Bindingwrapper = styled.div`
 `;
 export const Bindingcontent = styled.div`
   max-width: 190px;
+  ${Media.md} {
+    max-width: 150px;
+    padding-top:20px;
+  }
 `;
 
 // footer css start
@@ -405,6 +667,9 @@ export const Footerinfo = styled.div`
     margin-bottom: 22px;
     font-family: "visbycf", sans-serif;
     font-weight: 600;
+    ${Media.md} {
+      font-size: 24px;
+    }
   }
   p {
     font-size: 21px;
@@ -415,11 +680,14 @@ export const Footerinfo = styled.div`
     span {
       font-family: "Helvetica", sans-serif;
     }
+    ${Media.md} {
+      font-size: 14px;
+    }
   }
 `;
 
 export const Footerform = styled.div`
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
 `;
 
@@ -618,6 +886,12 @@ export const Customaccordian = styled.div`
       top: 48%;
       z-index: 9;
     }
+    ${Media.md} {
+      font-size: 20px;
+    }
+    ${Media.md} {
+      font-size: 12px;
+    }
   }
   .accordion {
     border: none;
@@ -642,6 +916,10 @@ export const Customaccordian = styled.div`
 // service slider css start
 
 export const Customserviceslider = styled.div`
+${Media.sm} {
+  margin-top:100px;
+}
+
   h5 {
     font-size: 31px;
     font-weight: 600;
@@ -654,6 +932,9 @@ export const Customserviceslider = styled.div`
       font-family: "Helvetica", sans-serif;
       font-weight: 400;
     }
+    ${Media.md} {
+      font-size: 24px;
+    }
   }
   p {
     font-size: 18px;
@@ -663,6 +944,9 @@ export const Customserviceslider = styled.div`
     span {
       font-family: "Helvetica", sans-serif;
       font-weight: 400;
+    }
+    ${Media.md} {
+      font-size: 14px;
     }
   }
   h3 {
@@ -709,29 +993,31 @@ export const Customserviceslider = styled.div`
       opacity: 0;
     }
   }
-
-  .owl-nav {
-    display: block;
-    margin-top: 50px;
-    clear: both;
-    text-align: right;
-    .nav-btn {
-      background-repeat: no-repeat;
-      width: 18px;
-      height: 15px;
-      &.prev-slide {
-        background: url(${Arrow1});
-        transform: scale(-1);
+  .owl-carousel {
+    .owl-nav {
+      display: block;
+      margin-top: 50px;
+      clear: both;
+      text-align: right;
+      .nav-btn {
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 15px;
+        &.prev-slide {
+          background: url(${Arrow1});
+          transform: scale(-1);
+        }
+        &.next-slide {
+          background: url(${Arrow1});
+        }
       }
-      &.next-slide {
-        background: url(${Arrow1});
-      }
-    }
-    button {
-      background-color: #000 !important;
-      padding: 10px !important;
-      &:hover {
-        background: #000 !important;
+      
+      button {
+        background-color: #000 !important;
+        padding: 10px !important;
+        &:hover {
+          background: #000 !important;
+        }
       }
     }
   }
@@ -753,7 +1039,13 @@ export const Customserviceslider = styled.div`
 // owlslide css start
 export const Customowlslide = styled.div`
   margin-top: 240px;
-
+  ${Media.md} {
+    margin-top:80px;
+    margin-left:50px;
+  }
+  ${Media.sm} {
+    margin-left:40px;
+  }
   .owl-prev {
     &.disabled {
       opacity: 0.6;
@@ -834,6 +1126,9 @@ export const Customowlslide = styled.div`
       line-height: 57px;
       font-weight: 400;
       font-family: "Helvetica", sans-serif;
+      ${Media.md} {
+        font-size: 20px;
+      }
     }
     p {
       color: #fff;
@@ -841,6 +1136,9 @@ export const Customowlslide = styled.div`
       line-height: 27px;
       font-family: "HelveticaNeue", sans-serif;
       color: #fff;
+      ${Media.md} {
+        font-size: 16px;
+      }
     }
   }
 `;
