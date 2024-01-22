@@ -912,9 +912,6 @@ export const Fotterbottom = styled.div`
       font-size: 14px;
     }
   }
-  img {
-    width: 16px;
-  }
   .text-right {
     text-align: right;
   }
@@ -934,6 +931,35 @@ export const Ftcontactseciton = styled.div`
     width: 28px;
   }
 `;
+export const Desktopftbottom = styled.div`
+${Media.sm} {
+display:none;
+}
+`;
+export const Footerrow = styled.div`
+display:flex;
+justify-content: space-between;
+`;
+export const Fbcolumn1 = styled.div``;
+export const Fbcolumn2 = styled.div`
+${Media.sm} {
+  text-align: center;
+  margin-top:15px;
+  }`;
+export const Fbcolumn3 = styled.div`
+`;
+export const Mobileftbottom = styled.div`
+display:none;
+${Media.sm} {
+  margin-top:20px;
+  display:flex;
+justify-content: space-between;
+align-item:center;
+  
+  }
+
+`;
+
 
 // accordian css
 

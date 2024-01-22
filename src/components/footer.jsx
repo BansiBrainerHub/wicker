@@ -18,6 +18,12 @@ import {
   Customrow,
   Customcolumn,
   Footermenu,
+  Desktopftbottom,
+Footerrow,
+Fbcolumn1,
+Fbcolumn2,
+Fbcolumn3,
+Mobileftbottom,
 } from "../../src/assets/style.jsx";
 
 const footer = () => {
@@ -98,32 +104,38 @@ const footer = () => {
                 </Ftcontactseciton>
           </Footermenu>
         </Customefooter>
-        
-        <Fotterbottom>
-          <Row className="justify_between">
-            <Column className="col-md-4 col-12">
-              <p> Alle Rechte vorbehalten. </p>
-            </Column>
-            <Column className="col-md-4 col-12">
-              <p>
-                {" "}
-                © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
-              </p>
-            </Column>
-            <Column className="col-md-4 col-12">
-              <p className="text-right">
-                nach oben{" "}
+        <Desktopftbottom>
+          <Fotterbottom>
+             <Footerrow>
+              <Fbcolumn1> <p> Alle Rechte vorbehalten. </p></Fbcolumn1>
+              <Fbcolumn2> <p> © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "} </p></Fbcolumn2>
+              <Fbcolumn3> <p> nach oben
                 <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
                   <path
                     d="M8 18.5L8 2M8 2L1 10M8 2L16 10"
                     stroke="#1D273E"
                     stroke-width="2"
                   />
-                </svg>
-              </p>
-            </Column>
-          </Row>
-        </Fotterbottom>
+                </svg> </p>
+                </Fbcolumn3>
+             </Footerrow>
+          </Fotterbottom>
+        </Desktopftbottom>
+        <Mobileftbottom>
+              <Fbcolumn1> <p> Alle Rechte vorbehalten. </p></Fbcolumn1>
+              <Fbcolumn3> <p> nach oben
+                <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
+                  <path
+                    d="M8 18.5L8 2M8 2L1 10M8 2L16 10"
+                    stroke="#1D273E"
+                    stroke-width="2"
+                  />
+                </svg> </p>
+                </Fbcolumn3>
+              
+        </Mobileftbottom>
+        <Fbcolumn2> <p> © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "} </p></Fbcolumn2>
+        
       </Footersection>
     </>
   );
