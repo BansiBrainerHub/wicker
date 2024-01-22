@@ -19,10 +19,10 @@ export const Media = {
 };
 
 export const MainIndexpage = styled.div`
-margin-bottom:20px;
+  margin-bottom: 20px;
 `;
 
-export const Headerwrapper = styled.div` 
+export const Headerwrapper = styled.div`
   position: relative;
   padding-left: 85px;
   padding-right: 85px;
@@ -140,24 +140,24 @@ export const Bannerheading = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.lg} {
       font-size: 68px;
-    line-height: 78px;
+      line-height: 78px;
     }
     ${Media.md} {
       font-size: 48px;
-    line-height: 48px;
+      line-height: 48px;
     }
     ${Media.sm} {
       font-size: 36px;
-    line-height: 48px;
+      line-height: 48px;
     }
     ${Media.ss} {
       font-size: 32px;
-    line-height: 35px;
+      line-height: 35px;
     }
   }
   ${Media.lg} {
-    margin-left:90px;
-    margin-right:90px;
+    margin-left: 90px;
+    margin-right: 90px;
     margin-bottom: -18px;
   }
   ${Media.sm} {
@@ -168,38 +168,35 @@ export const Bannerheading = styled.div`
     max-width: 500px;
     margin: 0 auto -16px;
   }
-  
-
 `;
 export const Desktopview = styled.div`
-${Media.sm} {
- display:none;
-}
+  ${Media.sm} {
+    display: none;
+  }
 `;
 export const Mobileview = styled.div`
-display:none;
-${Media.sm} {
- display:block;
- padding-left: 30px;
+  display: none;
+  ${Media.sm} {
+    display: block;
+    padding-left: 30px;
     padding-right: 30px;
     max-width: 700px;
     margin: 0 auto;
-}
-${Media.ss} {
-  padding-left: 15px;
-     padding-right: 15px;
- }
+  }
+  ${Media.ss} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 
 export const MobilebannerContent = styled.div`
-max-width:700px;
-margin:20px auto 0;
-.justif_content {
-  justify-content:space-between;
-  align-items: center;
-}
+  max-width: 700px;
+  margin: 20px auto 0;
+  .justif_content {
+    justify-content: space-between;
+    align-items: center;
+  }
 `;
-
 
 export const Bannerleftcontent = styled.div`
   max-width: 188px;
@@ -229,7 +226,6 @@ export const Bannerleftcontent = styled.div`
       font-size: 16px;
     }
   }
-  
 `;
 export const Bannerrightcontent = styled.div`
   max-width: 145px;
@@ -240,7 +236,6 @@ export const Bannerrightcontent = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.lg} {
       font-size: 18px;
-      
     }
     ${Media.md} {
       font-size: 16px;
@@ -270,7 +265,7 @@ export const Containerfluid = styled.div`
     margin-left: 50px;
   }
   ${Media.sm} {
-    margin-left: 30px;
+    margin-left: 15px;
   }
 `;
 
@@ -382,11 +377,11 @@ export const Companyblog = styled.div`
     max-width: 40%;
     ${Media.md} {
       flex: 0 0 30%;
-    max-width: 30%;
+      max-width: 30%;
     }
     ${Media.sm} {
       flex: 0 0 40%;
-    max-width: 40%;
+      max-width: 40%;
     }
   }
   .blog_content {
@@ -394,22 +389,21 @@ export const Companyblog = styled.div`
     max-width: 60%;
     ${Media.md} {
       flex: 0 0 70%;
-    max-width: 70%;
+      max-width: 70%;
     }
     ${Media.sm} {
       flex: 0 0 60%;
-    max-width: 60%;
+      max-width: 60%;
     }
   }
 
-
   ${Media.md} {
     margin-top: 88px;
-  margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   ${Media.sm} {
-    margin-left:30px;
-    margin-right:30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 `;
 
@@ -427,18 +421,16 @@ export const Companylogo = styled.div`
     ${Media.md} {
       max-width: 116px;
     }
-    
   }
 `;
 
 export const Copanyblogcontent = styled.div`
-
-${Media.md} {
-  margin-right:40px;
-}
-${Media.sm} {
-  margin-right:0px;
-}
+  ${Media.md} {
+    margin-right: 40px;
+  }
+  ${Media.sm} {
+    margin-right: 0px;
+  }
 
   p {
     font-size: 25px;
@@ -455,25 +447,25 @@ ${Media.sm} {
 export const Borderline = styled.div`
   margin-top: 88px;
   margin-bottom: 128px;
-  max-width:1200px;
-  margin-left:auto;
-  margin-right:auto;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   ${Media.md} {
-    max-width:850px;
-    margin:89px auto;
+    max-width: 850px;
+    margin: 89px auto;
   }
 `;
 
 export const Teamsection = styled.div`
-${Media.md} {
-  margin-left:50px;
-  margin-right:50px;
-}
+  ${Media.md} {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
-${Media.sm} {
-  margin-left:30px;
-  margin-right:30px;
-}
+  ${Media.sm} {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 `;
 export const TeamColumn = styled.div``;
 
@@ -482,7 +474,7 @@ export const Teamcard = styled.div`
     width: 100%;
   }
   ${Media.sm} {
-    margin-bottom:30px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -490,7 +482,7 @@ export const Teamcardcontent = styled.div`
   padding-top: 20px;
   padding-left: 16px;
   ${Media.md} {
-      padding-left: 0px;
+    padding-left: 0px;
   }
   h4 {
     font-size: 20px;
@@ -500,7 +492,7 @@ export const Teamcardcontent = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.md} {
       font-size: 16px;
-  }
+    }
   }
   h3 {
     font-size: 40px;
@@ -510,7 +502,7 @@ export const Teamcardcontent = styled.div`
     font-weight: 400;
     ${Media.md} {
       font-size: 24px;
-  }
+    }
   }
   p {
     font-size: 16px;
@@ -522,7 +514,7 @@ export const Teamcardcontent = styled.div`
     }
     ${Media.md} {
       font-size: 12px;
-  }
+    }
   }
 `;
 
@@ -531,11 +523,11 @@ export const Teamdiscription = styled.div`
   ${Media.md} {
     padding-left: 0px;
     // margin-right:55px;
-    margin-left:-15px;
+    margin-left: -15px;
   }
   ${Media.sm} {
-    margin-right:0px;
-    margin-left:0px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
   p {
     margin-bottom: 40px;
@@ -560,6 +552,7 @@ export const Slidersection = styled.div`
   padding-bottom: 300px;
   ${Media.sm} {
     padding-top: 100px;
+    padding-bottom: 220px;
     margin-top: 40px;
   }
 `;
@@ -567,11 +560,17 @@ export const Slidersection = styled.div`
 export const Quotesection = styled.div`
   max-width: 850px;
   margin-left: 40px;
+  ${Media.sm} {
+    margin-left: 15px;
+  }
   img {
     display: inline;
     width: 50px;
     margin-right: 30px;
     margin-left: 60px;
+    ${Media.xs} {
+      margin-left: 30px;
+    }
   }
   p {
     color: #fff;
@@ -580,11 +579,10 @@ export const Quotesection = styled.div`
     line-height: 48px;
     font-family: "visbycf", sans-serif;
     ${Media.sm} {
-     font-size:20px;
-     line-height:32px;
+      font-size: 20px;
+      line-height: 32px;
     }
   }
-
 `;
 
 export const Owlslider = styled.div``;
@@ -599,9 +597,9 @@ export const Faqwrapper = styled.div`
   border-radius: 20px;
   ${Media.sm} {
     padding: 36px 20px 80px;
-    margin-left: 40px;
-  margin-right: 40px;
-   }
+    margin-left: 30px;
+    margin-right: 30px;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -629,6 +627,8 @@ export const Faqheader = styled.div`
     }
     ${Media.md} {
       font-size: 51px;
+      line-height: normal;
+      margin-bottom: 20px;
     }
     ${Media.md} {
       font-size: 28px;
@@ -645,11 +645,14 @@ export const Faqheader = styled.div`
     }
     ${Media.sm} {
       font-size: 11px;
-      line-height:14px;
+      line-height: 14px;
     }
   }
   :last-child {
     margin-bottom: 50px;
+    ${Media.md} {
+      margin-bottom: 0px;
+    }
   }
 `;
 
@@ -659,15 +662,14 @@ export const Bindingwrapper = styled.div`
   height: 325px;
   border-radius: 100%;
   background-color: #000;
-  margin: 0 0 0 auto;
+  margin: -40px 0 30px auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -40px;
   ${Media.md} {
     max-width: 225px;
-  height: 225px;
+    height: 225px;
   }
 
   p {
@@ -688,21 +690,19 @@ export const Bindingcontent = styled.div`
   max-width: 190px;
   ${Media.md} {
     max-width: 150px;
-    padding-top:20px;
+    padding-top: 20px;
   }
 `;
 
 // footer css start
 
-
 export const Footersection = styled.div`
   margin-left: 40px;
   margin-right: 40px;
   ${Media.md} {
-    margin-left: 30px;
-  margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
-
 `;
 
 export const Footerinfo = styled.div`
@@ -735,45 +735,42 @@ export const Footerinfo = styled.div`
   }
 `;
 
-
 export const Customefooter = styled.div`
-display: flex;
+  display: flex;
   align-items: end;
   justify-content: space-between;
   ${Media.sm} {
-    display:block;
+    display: block;
   }
-
 `;
 export const Customrow = styled.div`
-display: flex;
-align-items: end;
-${Media.sm} {
-  flex-wrap:wrap;
-}
+  display: flex;
+  align-items: end;
+  ${Media.sm} {
+    flex-wrap: wrap;
+  }
 `;
-export const Customcolumn = styled.div`
-`;
-export const Footermenu  = styled.div`
+export const Customcolumn = styled.div``;
+export const Footermenu = styled.div`
   max-width: 520px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    ${Media.lg} {
-      justify-content: flex-end;
-    }
-    ${Media.sm} {
-      max-width: 100%;
-      justify-content: space-between;
-      margin-top:40px;
-      padding-left:15px;
-      padding-right:15px;
-    }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  ${Media.lg} {
+    justify-content: flex-end;
+  }
+  ${Media.sm} {
+    max-width: 100%;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 `;
 export const Quicklinks = styled.div`
   max-width: 200px;
   width: 100%;
-  margin-right:15px;
+  margin-right: 15px;
   ${Media.lg} {
     max-width: 120px;
   }
@@ -791,13 +788,12 @@ export const Quicklinks = styled.div`
   }
 `;
 
-
 export const Footerform = styled.div`
   max-width: 550px;
   width: 100%;
   ${Media.lg} {
     max-width: 100%;
-    width:100%;
+    width: 100%;
   }
 `;
 
@@ -813,7 +809,7 @@ export const InoutField = styled.div`
     color: #111725;
     font-family: "visbycf", sans-serif;
     ${Media.sm} {
-      margin-bottom:15px;
+      margin-bottom: 15px;
     }
   }
   ::placeholder {
@@ -828,13 +824,13 @@ export const Submitbtn = styled.div`
   border-radius: 8px;
   max-width: 112px;
   width: 100%;
-  margin-left:10px;
+  margin-left: 20px;
   text-align: center;
   line-height: 54px;
   cursor: pointer;
   font-family: "open-sans", sans-serif;
   ${Media.sm} {
-    margin-left:0px;
+    margin-left: 0px;
     max-width: 100%;
   }
 `;
@@ -886,8 +882,8 @@ export const Checkbox = styled.div`
   }
 
   .checkBox .checkmark:after {
-    left: 2px;
-    top: 2px;
+    left: 1px;
+    top: 1px;
     width: 4px;
     height: 4px;
     border: solid #1e2940;
@@ -895,8 +891,6 @@ export const Checkbox = styled.div`
     background: #1e2940;
   }
 `;
-
-
 
 export const Fotterbottom = styled.div`
   margin-top: 90px;
@@ -932,37 +926,34 @@ export const Ftcontactseciton = styled.div`
   }
 `;
 export const Desktopftbottom = styled.div`
-${Media.sm} {
-display:none;
-}
+  ${Media.sm} {
+    display: none;
+  }
 `;
 export const Footerrow = styled.div`
-display:flex;
-justify-content: space-between;
-${Media.sm} {
-  margin-top:20px;
-  display:flex;
-justify-content: space-between;
-align-item:center;
-  
+  display: flex;
+  justify-content: space-between;
+  ${Media.sm} {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-item: center;
   }
 `;
 export const Fbcolumn1 = styled.div``;
 export const Fbcolumn2 = styled.div`
-${Media.sm} {
-  text-align: center;
-  margin-top:15px;
-  }`;
-export const Fbcolumn3 = styled.div`
-`;
-export const Mobileftbottom = styled.div`
-display:none;
-${Media.sm} {
-  display:block;
+  ${Media.sm} {
+    text-align: center;
+    margin-top: 15px;
   }
-
 `;
-
+export const Fbcolumn3 = styled.div``;
+export const Mobileftbottom = styled.div`
+  display: none;
+  ${Media.sm} {
+    display: block;
+  }
+`;
 
 // accordian css
 
@@ -976,11 +967,14 @@ export const Customaccordian = styled.div`
       color: #000;
       font-size: 20px;
       font-weight: 200;
+      ${Media.md} {
+        font-size: 11px;
+      }
     }
   }
   .accordion__button {
     padding-left: 0px;
-    padding-right: 0px;
+    padding-right: 25px;
     position: relative;
     font-size: 30px;
     line-height: 48px;
@@ -1002,6 +996,9 @@ export const Customaccordian = styled.div`
       right: 7px;
       z-index: 9;
       top: 40%;
+      ${Media.md} {
+        top: 36%;
+      }
     }
     &:after {
       display: inline-block;
@@ -1017,6 +1014,7 @@ export const Customaccordian = styled.div`
     }
     ${Media.md} {
       font-size: 20px;
+      line-height: normal;
     }
     ${Media.md} {
       font-size: 12px;
@@ -1045,9 +1043,9 @@ export const Customaccordian = styled.div`
 // service slider css start
 
 export const Customserviceslider = styled.div`
-${Media.sm} {
-  margin-top:100px;
-}
+  ${Media.sm} {
+    margin-top: 100px;
+  }
 
   h5 {
     font-size: 31px;
@@ -1140,7 +1138,7 @@ ${Media.sm} {
           background: url(${Arrow1});
         }
       }
-      
+
       button {
         background-color: #000 !important;
         padding: 10px !important;
@@ -1169,11 +1167,11 @@ ${Media.sm} {
 export const Customowlslide = styled.div`
   margin-top: 240px;
   ${Media.md} {
-    margin-top:80px;
-    margin-left:50px;
+    margin-top: 80px;
+    margin-left: 50px;
   }
   ${Media.sm} {
-    margin-left:40px;
+    margin-left: 40px;
   }
   .owl-prev {
     &.disabled {
@@ -1275,71 +1273,70 @@ export const Customowlslide = styled.div`
 // custome mdoal css
 
 export const Contactmodalwrapper = styled.div`
-margin-left:20px;
-margin-right:20px;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 export const Customemodal = styled.div`
-h2 {
-  margin-bottom:20px;
-}
-
+  h2 {
+    margin-bottom: 20px;
+  }
 `;
 export const Customemodalrow = styled.div`
-display: flex;
-margin-left: -15px;
-margin-right: -15px;
-align-items: center;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: center;
 `;
 export const Customemodalgroup = styled.div`
-width: 50%;
+  width: 50%;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
   .form-control {
     width: 100%;
-  border: 1px solid #D9D9D9;
-  height: 45px;
-  padding: 0px 15px;
-  box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    height: 45px;
+    padding: 0px 15px;
+    box-sizing: border-box;
   }
- 
+
   .css-wmy1p7-ReactDropdownSelect {
-    border: 1px solid #D9D9D9 !important;
+    border: 1px solid #d9d9d9 !important;
     height: 45px !important;
     padding: 0px 15px;
   }
   p {
     margin-top: 0px;
-  margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .w-100 {
-    width:100%;
-    }
+    width: 100%;
+  }
 `;
 export const Customemodalgroup1 = styled.div`
-width:100%;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
   .form-control {
     width: 100%;
-  border: 1px solid #D9D9D9;
-  height: 45px;
-  padding: 0px 15px;
-  box-sizing: border-box;
+    border: 1px solid #d9d9d9;
+    height: 45px;
+    padding: 0px 15px;
+    box-sizing: border-box;
   }
   .text_control {
     width: 100%;
-    border: 1px solid #D9D9D9;
+    border: 1px solid #d9d9d9;
     padding: 15px;
     box-sizing: border-box;
   }
   .modalcheckbox {
-    margin-left:30px;
-    margin-right:30px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
-  
+
   .checkmark {
     position: absolute;
     top: 50%;
@@ -1357,29 +1354,27 @@ width:100%;
     font-size: 10px;
     .checkmark:after {
       left: 3px;
-    top: 1px;
-    width: 4px;
-    height: 6px;
-    border: solid #1e2940;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background: inherit;
+      top: 1px;
+      width: 4px;
+      height: 6px;
+      border: solid #1e2940;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      background: inherit;
     }
   }
 `;
 export const Modalbtn = styled.div`
-background: #1e2941;
-color: #fff;
-border-radius: 8px;
-max-width: 112px;
-width: 100%;
-margin:0 auto;
-text-align: center;
-line-height: 54px;
-cursor: pointer;
-font-family: "open-sans",sans-serif;
-
+  background: #1e2941;
+  color: #fff;
+  border-radius: 8px;
+  max-width: 112px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 54px;
+  cursor: pointer;
+  font-family: "open-sans", sans-serif;
 `;
-

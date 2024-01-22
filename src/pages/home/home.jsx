@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../../components/Header";
+import Header from "../../components/header";
 import OwlSlider from "../../components/Owlslider";
 import Faqaccordian from "../../components/accordian";
 import "../../assets/common-style.css";
@@ -58,17 +58,17 @@ const home = () => {
         {/* banner section start  */}
         <Headerbanner>
           <Container>
-              <Bannerheading>
-                <h2> Generationen verbinden, Vermögen gestalten </h2>
-              </Bannerheading>
+            <Bannerheading>
+              <h2> Generationen verbinden, Vermögen gestalten </h2>
+            </Bannerheading>
             <Desktopview>
               <Row className="banner_alignment">
                 <Column>
                   <Bannerleftcontent>
                     <p>
                       Wicker <span>&</span> Partner <span>-</span> Seit zwei
-                      Generationen <strong> Ihr Partner </strong> im nachhaltigen
-                      Aufbau von Privatvermögen durch innovative
+                      Generationen <strong> Ihr Partner </strong> im
+                      nachhaltigen Aufbau von Privatvermögen durch innovative
                       Immobilienlösungen.
                     </p>
                   </Bannerleftcontent>
@@ -86,28 +86,28 @@ const home = () => {
               </Row>
             </Desktopview>
             <Mobileview>
-                <Topbannerimg>
-                  <img src={headerbnnerImg} />
-                </Topbannerimg>
-                <MobilebannerContent>
-                  <Row className="justif_content">
-                    <Column>
-                      <Bannerleftcontent>
-                        <p>
-                          Wicker <span>&</span> Partner <span>-</span> Seit zwei
-                          Generationen <strong> Ihr Partner </strong> im nachhaltigen
-                          Aufbau von Privatvermögen durch innovative
-                          Immobilienlösungen.
-                        </p>
-                      </Bannerleftcontent>
-                    </Column>
-                      <Column>
-                        <Bannerrightcontent>
-                          <p>Mit Immobilien Werte schaffen.</p>
-                        </Bannerrightcontent>
-                      </Column>
-                  </Row>
-                  </MobilebannerContent>
+              <Topbannerimg>
+                <img src={headerbnnerImg} />
+              </Topbannerimg>
+              <MobilebannerContent>
+                <Row className="justif_content">
+                  <Column>
+                    <Bannerleftcontent>
+                      <p>
+                        Wicker <span>&</span> Partner <span>-</span> Seit zwei
+                        Generationen <strong> Ihr Partner </strong> im
+                        nachhaltigen Aufbau von Privatvermögen durch innovative
+                        Immobilienlösungen.
+                      </p>
+                    </Bannerleftcontent>
+                  </Column>
+                  <Column>
+                    <Bannerrightcontent>
+                      <p>Mit Immobilien Werte schaffen.</p>
+                    </Bannerrightcontent>
+                  </Column>
+                </Row>
+              </MobilebannerContent>
             </Mobileview>
           </Container>
         </Headerbanner>
