@@ -122,6 +122,7 @@ const footer = () => {
           </Fotterbottom>
         </Desktopftbottom>
         <Mobileftbottom>
+          <Footerrow>
               <Fbcolumn1> <p> Alle Rechte vorbehalten. </p></Fbcolumn1>
               <Fbcolumn3> <p> nach oben
                 <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
@@ -132,9 +133,10 @@ const footer = () => {
                   />
                 </svg> </p>
                 </Fbcolumn3>
-              
+          </Footerrow>
+          <Fbcolumn2> <p> © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "} </p></Fbcolumn2>
         </Mobileftbottom>
-        <Fbcolumn2> <p> © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "} </p></Fbcolumn2>
+       
         
       </Footersection>
     </>

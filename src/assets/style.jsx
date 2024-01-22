@@ -939,6 +939,13 @@ display:none;
 export const Footerrow = styled.div`
 display:flex;
 justify-content: space-between;
+${Media.sm} {
+  margin-top:20px;
+  display:flex;
+justify-content: space-between;
+align-item:center;
+  
+  }
 `;
 export const Fbcolumn1 = styled.div``;
 export const Fbcolumn2 = styled.div`
@@ -951,11 +958,7 @@ export const Fbcolumn3 = styled.div`
 export const Mobileftbottom = styled.div`
 display:none;
 ${Media.sm} {
-  margin-top:20px;
-  display:flex;
-justify-content: space-between;
-align-item:center;
-  
+  display:block;
   }
 
 `;
@@ -1336,11 +1339,34 @@ width:100%;
     margin-left:30px;
     margin-right:30px;
   }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border: 1px solid #1e2940;
+  }
   .checkBox {
     margin-top: 10px;
     margin-bottom: 0px;
     color: #000;
     font-size: 10px;
+    .checkmark:after {
+      left: 3px;
+    top: 1px;
+    width: 4px;
+    height: 6px;
+    border: solid #1e2940;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: inherit;
+    }
   }
 `;
 export const Modalbtn = styled.div`
