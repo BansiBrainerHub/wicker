@@ -8,21 +8,24 @@ import {
   Footerinfo,
   Footerform,
   InoutField,
-  Telephone,
   Submitbtn,
   Checkbox,
   Checkmark,
   Quicklinks,
   Fotterbottom,
   Ftcontactseciton,
+  Customefooter,
+  Customrow,
+  Customcolumn,
+  Footermenu,
 } from "../../src/assets/style.jsx";
 
 const footer = () => {
   return (
     <>
       <Footersection>
-        <Row className="align_end">
-          <Column className="col-lg-7 col-md-6 col-12">
+        <Customefooter>
+          <Column className="col-md-7 col-12">
             <Footerinfo>
               <h2> Beratung anfragen </h2>
               <p>
@@ -30,27 +33,31 @@ const footer = () => {
                 <br /> Lassen Sie sich kostenlos und unverbindlich beraten.
               </p>
               <Footerform>
-                <Row>
-                  <Column className="col-md-6 col-12">
-                    <InoutField>
-                      <input type="text" placeholder="Vorname" />
-                    </InoutField>
-                  </Column>
-                  <Column className="col-md-6 col-12">
-                    <InoutField>
-                      <input type="text" placeholder="Vorname" />
-                    </InoutField>
-                  </Column>
-                </Row>
+                <Customrow>
+                  <Customcolumn className="col-md-8 col-12">
+                    <Row>
+                        <Column className="col-md-6 col-12">
+                        <InoutField>
+                          <input type="text" placeholder="Vorname" />
+                        </InoutField>
+                      </Column>
+                      <Column className="col-md-6 col-12">
+                        <InoutField>
+                          <input type="text" placeholder="Vorname" />
+                        </InoutField>
+                      </Column>
+                    </Row>
+                    <Row>
+                      <Column className="col-12"> 
+                          <InoutField className="mt-15">
+                            <input type="text" placeholder="Telefon" />
+                          </InoutField>
+                        </Column>
+                        </Row>
+                  </Customcolumn>
+                  <Submitbtn>Absenden</Submitbtn>
+                </Customrow>
               </Footerform>
-              <Telephone>
-                <Footerform>
-                  <InoutField>
-                    <input type="text" placeholder="Telefon" />
-                  </InoutField>
-                </Footerform>
-                <Submitbtn>Absenden</Submitbtn>
-              </Telephone>
               <Checkbox>
                 <label class="checkBox">
                   Ich akzeptiere die geltenden Datenschutzbestimmungen.
@@ -60,9 +67,7 @@ const footer = () => {
               </Checkbox>
             </Footerinfo>
           </Column>
-          <Column className="col-lg-5 col-md-6 col-12">
-            <Row>
-              <Column className="col-md-6 col-12">
+          <Footermenu>
                 <Quicklinks>
                   <ul>
                     <li> Home </li>
@@ -71,8 +76,6 @@ const footer = () => {
                     <li> Impressum </li>
                   </ul>
                 </Quicklinks>
-              </Column>
-              <Column className="col-md-6 col-12">
                 <Ftcontactseciton>
                   <h4>
                     Wicker <span>&</span> Partners GmbH
@@ -93,10 +96,9 @@ const footer = () => {
                     />
                   </svg>
                 </Ftcontactseciton>
-              </Column>
-            </Row>
-          </Column>
-        </Row>
+          </Footermenu>
+        </Customefooter>
+        
         <Fotterbottom>
           <Row className="justify_between">
             <Column className="col-md-4 col-12">

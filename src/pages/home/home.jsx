@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Header from "../../components/header";
+import Header from "../../components/Header";
 import OwlSlider from "../../components/Owlslider";
 import Faqaccordian from "../../components/accordian";
 import "../../assets/common-style.css";
@@ -59,9 +59,8 @@ const home = () => {
         <Headerbanner>
           <Container>
               <Bannerheading>
-                  <h2> Generationen verbinden, Vermögen gestalten </h2>
-                </Bannerheading>
-            
+                <h2> Generationen verbinden, Vermögen gestalten </h2>
+              </Bannerheading>
             <Desktopview>
               <Row className="banner_alignment">
                 <Column>
@@ -161,13 +160,13 @@ const home = () => {
         {/* company blog section start  */}
         <Companyblog>
           <Container>
-            <Row className="align-item-center">
-              <Column className="col-lg-5 col-md-4">
+            <Row className="align-item-center no-wrape">
+              <Column className=" blog_img ">
                 <Companylogo>
                   <img src={logoimage} />
                 </Companylogo>
               </Column>
-              <Column className="col-lg-7 col-md-8">
+              <Column className="blog_content">
                 <Copanyblogcontent>
                   <p>
                     In einer Welt, die ständigen Veränderungen unterworfen ist,

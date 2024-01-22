@@ -18,7 +18,9 @@ export const Media = {
   xxs: "@media(max-width:404px)",
 };
 
-export const MainIndexpage = styled.div``;
+export const MainIndexpage = styled.div`
+margin-bottom:20px;
+`;
 
 export const Headerwrapper = styled.div` 
   position: relative;
@@ -375,6 +377,32 @@ export const Innovationcontent = styled.div`
 export const Companyblog = styled.div`
   margin-top: 150px;
   margin-bottom: 88px;
+  .blog_img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    ${Media.md} {
+      flex: 0 0 30%;
+    max-width: 30%;
+    }
+    ${Media.sm} {
+      flex: 0 0 40%;
+    max-width: 40%;
+    }
+  }
+  .blog_content {
+    flex: 0 0 60%;
+    max-width: 60%;
+    ${Media.md} {
+      flex: 0 0 70%;
+    max-width: 70%;
+    }
+    ${Media.sm} {
+      flex: 0 0 60%;
+    max-width: 60%;
+    }
+  }
+
+
   ${Media.md} {
     margin-top: 88px;
   margin-bottom: 0px;
@@ -390,12 +418,16 @@ export const Companylogo = styled.div`
   ${Media.md} {
     margin-left: 60px;
   }
+  ${Media.sm} {
+    margin-left: 0px;
+  }
   img {
     max-width: 188px;
     width: 100%;
     ${Media.md} {
       max-width: 116px;
     }
+    
   }
 `;
 
@@ -403,6 +435,9 @@ export const Copanyblogcontent = styled.div`
 
 ${Media.md} {
   margin-right:40px;
+}
+${Media.sm} {
+  margin-right:0px;
 }
 
   p {
@@ -430,6 +465,11 @@ export const Borderline = styled.div`
 `;
 
 export const Teamsection = styled.div`
+${Media.md} {
+  margin-left:50px;
+  margin-right:50px;
+}
+
 ${Media.sm} {
   margin-left:30px;
   margin-right:30px;
@@ -490,7 +530,7 @@ export const Teamdiscription = styled.div`
   padding-left: 60px;
   ${Media.md} {
     padding-left: 0px;
-    margin-right:55px;
+    // margin-right:55px;
     margin-left:-15px;
   }
   ${Media.sm} {
@@ -654,13 +694,22 @@ export const Bindingcontent = styled.div`
 
 // footer css start
 
+
 export const Footersection = styled.div`
   margin-left: 40px;
   margin-right: 40px;
+  ${Media.md} {
+    margin-left: 30px;
+  margin-right: 30px;
+  }
+
 `;
 
 export const Footerinfo = styled.div`
   margin-left: 30px;
+  ${Media.lg} {
+    margin-left: 0px;
+  }
   h2 {
     font-size: 30px;
     line-height: 24px;
@@ -686,9 +735,70 @@ export const Footerinfo = styled.div`
   }
 `;
 
+
+export const Customefooter = styled.div`
+display: flex;
+  align-items: end;
+  justify-content: space-between;
+  ${Media.sm} {
+    display:block;
+  }
+
+`;
+export const Customrow = styled.div`
+display: flex;
+align-items: end;
+${Media.sm} {
+  flex-wrap:wrap;
+}
+`;
+export const Customcolumn = styled.div`
+`;
+export const Footermenu  = styled.div`
+  max-width: 520px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    ${Media.lg} {
+      justify-content: flex-end;
+    }
+    ${Media.sm} {
+      max-width: 100%;
+      justify-content: space-between;
+      margin-top:40px;
+      padding-left:15px;
+      padding-right:15px;
+    }
+`;
+export const Quicklinks = styled.div`
+  max-width: 200px;
+  width: 100%;
+  margin-right:15px;
+  ${Media.lg} {
+    max-width: 120px;
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+
+    li {
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      font-family: "visbycf", sans-serif;
+    }
+  }
+`;
+
+
 export const Footerform = styled.div`
   max-width: 550px;
   width: 100%;
+  ${Media.lg} {
+    max-width: 100%;
+    width:100%;
+  }
 `;
 
 export const InoutField = styled.div`
@@ -702,6 +812,9 @@ export const InoutField = styled.div`
     outline: 1px solid #d7d7d7;
     color: #111725;
     font-family: "visbycf", sans-serif;
+    ${Media.sm} {
+      margin-bottom:15px;
+    }
   }
   ::placeholder {
     color: #b8b8b8;
@@ -709,21 +822,21 @@ export const InoutField = styled.div`
   }
 `;
 
-export const Telephone = styled.div`
-  display: flex;
-  margin-top: 30px;
-`;
 export const Submitbtn = styled.div`
   background: #1e2941;
   color: #fff;
-  margin-left: 15px;
   border-radius: 8px;
   max-width: 112px;
   width: 100%;
+  margin-left:10px;
   text-align: center;
   line-height: 54px;
   cursor: pointer;
   font-family: "open-sans", sans-serif;
+  ${Media.sm} {
+    margin-left:0px;
+    max-width: 100%;
+  }
 `;
 
 export const Checkbox = styled.div`
@@ -773,8 +886,8 @@ export const Checkbox = styled.div`
   }
 
   .checkBox .checkmark:after {
-    left: 1px;
-    top: 1px;
+    left: 2px;
+    top: 2px;
     width: 4px;
     height: 4px;
     border: solid #1e2940;
@@ -783,23 +896,7 @@ export const Checkbox = styled.div`
   }
 `;
 
-export const Quicklinks = styled.div`
-  max-width: 200px;
-  width: 100%;
-  margin: 0 0 0 auto;
-  ul {
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
 
-    li {
-      font-size: 17px;
-      font-weight: 600;
-      margin-bottom: 16px;
-      font-family: "visbycf", sans-serif;
-    }
-  }
-`;
 
 export const Fotterbottom = styled.div`
   margin-top: 90px;
@@ -810,6 +907,9 @@ export const Fotterbottom = styled.div`
     span {
       font-family: "Helvetica", sans-serif;
       font-weight: 500;
+    }
+    ${Media.md} {
+      font-size: 14px;
     }
   }
   img {
@@ -1142,3 +1242,92 @@ export const Customowlslide = styled.div`
     }
   }
 `;
+
+// custome mdoal css
+
+export const Contactmodalwrapper = styled.div`
+margin-left:20px;
+margin-right:20px;
+`;
+
+export const Customemodal = styled.div`
+h2 {
+  margin-bottom:20px;
+}
+
+`;
+export const Customemodalrow = styled.div`
+display: flex;
+margin-left: -15px;
+margin-right: -15px;
+align-items: center;
+`;
+export const Customemodalgroup = styled.div`
+width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  .form-control {
+    width: 100%;
+  border: 1px solid #D9D9D9;
+  height: 45px;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  }
+ 
+  .css-wmy1p7-ReactDropdownSelect {
+    border: 1px solid #D9D9D9 !important;
+    height: 45px !important;
+    padding: 0px 15px;
+  }
+  p {
+    margin-top: 0px;
+  margin-bottom: 0px;
+  }
+  .w-100 {
+    width:100%;
+    }
+`;
+export const Customemodalgroup1 = styled.div`
+width:100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  .form-control {
+    width: 100%;
+  border: 1px solid #D9D9D9;
+  height: 45px;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  }
+  .text_control {
+    width: 100%;
+    border: 1px solid #D9D9D9;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .modalcheckbox {
+    margin-left:30px;
+    margin-right:30px;
+  }
+  .checkBox {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 10px;
+  }
+`;
+export const Modalbtn = styled.div`
+background: #1e2941;
+color: #fff;
+border-radius: 8px;
+max-width: 112px;
+width: 100%;
+margin:0 auto;
+text-align: center;
+line-height: 54px;
+cursor: pointer;
+font-family: "open-sans",sans-serif;
+
+`;
+
