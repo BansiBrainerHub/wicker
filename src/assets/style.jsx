@@ -812,7 +812,17 @@ export const Customrow = styled.div`
     flex-wrap: wrap;
   }
 `;
-export const Customcolumn = styled.div``;
+export const Customcolumn = styled.div`
+  .customRow {
+    flex-wrap: nowrap;
+    input {
+      margin-bottom: 0;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+`;
 export const Footermenu = styled.div`
   max-width: 520px;
   width: 100%;
@@ -972,6 +982,9 @@ export const Fotterbottom = styled.div`
     ${Media.md} {
       font-size: 14px;
     }
+    ${Media.sm} {
+      font-size: 14px;
+    }
   }
   .text-right {
     text-align: right;
@@ -986,6 +999,7 @@ export const Ftcontactseciton = styled.div`
     ${Media.md} {
       font-size: 14px;
     }
+
     span {
       font-family: "Helvetica", sans-serif;
       font-weight: 500;
@@ -1024,6 +1038,10 @@ export const Fbcolumn2 = styled.div`
 `;
 export const Fbcolumn3 = styled.div`
   cursor: pointer;
+  p {
+    display: flex;
+    gap: 5px;
+  }
 `;
 export const Mobileftbottom = styled.div`
   display: none;
