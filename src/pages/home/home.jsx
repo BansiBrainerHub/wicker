@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import ContactModal from "../../components/contactmodal";
+import React from "react";
+import styled from "styled-components";
 import Header from "../../components/header";
-import OwlSlider from "../../components/owlslider";
+import OwlSlider from "../../components/Owlslider";
 import Faqaccordian from "../../components/accordian";
 import "../../assets/common-style.css";
 import Footer from "../../components/footer";
@@ -50,12 +50,7 @@ import Teamimg02 from "../../assets/images/team-img-02.png";
 import QuoteImg from "../../assets/images/quoteImg.png";
 import Rightarrow from "../../assets/images/right_arrowBtn.png";
 
-const Home = () => {
-  const [openFirst, setOpenFirst] = useState(false);
-  const handleModalClose = () => {
-    setOpenFirst(false);
-  };
-
+const home = () => {
   return (
     <>
       <Header />
@@ -317,24 +312,19 @@ const Home = () => {
           </Faqheader>
           <Faqaccordian />
         </Faqwrapper>
-        <Bindingwrapper onClick={() => setOpenFirst(true)}>
+        <Bindingwrapper>
           <Bindingcontent>
             <p>unverbindliche Beratung</p>
             <img src={Rightarrow} />
           </Bindingcontent>
         </Bindingwrapper>
+
         <Footer />
       </MainIndexpage>
-      {openFirst && (
-        <ContactModal
-          openFirst={openFirst}
-          handleModalClose={handleModalClose}
-        />
-      )}
     </>
   );
 };
 
 // const MainIndexpage = styled.div``;
 
-export default Home;
+export default home;
