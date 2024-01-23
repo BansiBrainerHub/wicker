@@ -1279,7 +1279,23 @@ export const Contactmodalwrapper = styled.div`
 
 export const Customemodal = styled.div`
   h2 {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-align: center;
+    position: relative;
+    &:after {
+      content: "";
+      width: 215px;
+      height: 2px;
+      background: #343739;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
   }
 `;
 export const Customemodalrow = styled.div`
@@ -1296,14 +1312,21 @@ export const Customemodalgroup = styled.div`
   .form-control {
     width: 100%;
     border: 1px solid #d9d9d9;
-    height: 45px;
+    border-radius:5px;
+    height: 50px;
     padding: 0px 15px;
     box-sizing: border-box;
+    font-size: 20px;
+    font-weight:400;
+    text-transform: uppercase;
+    color: rgb(0 0 0 / 50%);
+    letter-spacing:-1px;
   }
 
   .css-wmy1p7-ReactDropdownSelect {
     border: 1px solid #d9d9d9 !important;
-    height: 45px !important;
+    border-radius:5px;
+    height: 50px !important;
     padding: 0px 15px;
   }
   p {

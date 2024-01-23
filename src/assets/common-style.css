@@ -68,8 +68,8 @@ img {
 }
 .react-responsive-modal-modal {
   max-width: 816px !important;
-  /* width:100% !important; */
-  padding: 99px 58px;
+  width: 100%;
+  padding: 70px 58px;
 }
 .moda_wrapper {
   margin-left: 20px;
