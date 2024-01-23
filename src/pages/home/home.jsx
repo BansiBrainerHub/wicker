@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactModal from "../../components/contact-modal";
+import ContactModal from "../../components/contactmodal";
 import Header from "../../components/header";
 import OwlSlider from "../../components/owlslider";
 import Faqaccordian from "../../components/accordian";

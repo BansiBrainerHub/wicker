@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ContactModal from "./contact-modal.jsx";
+import ContactModal from "./contactmodal.jsx";
 // images
 import LogoImg from "../assets/images/logo.png";
 import Rightarrow from "../assets/images/right_arrowBtn.png";
