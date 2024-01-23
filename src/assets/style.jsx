@@ -1022,7 +1022,9 @@ export const Fbcolumn2 = styled.div`
     }
   }
 `;
-export const Fbcolumn3 = styled.div``;
+export const Fbcolumn3 = styled.div`
+  cursor: pointer;
+`;
 export const Mobileftbottom = styled.div`
   display: none;
   ${Media.sm} {

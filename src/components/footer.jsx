@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // styles
 import {
@@ -26,7 +26,13 @@ import {
   Mobileftbottom,
 } from "../../src/assets/style.jsx";
 
-const footer = () => {
+const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <Footersection>
@@ -92,8 +98,8 @@ const footer = () => {
               </h4>
               <h4>
                 <span> +</span>
-                <span>(</span> <span>4</span>9 <span>)</span> 173 97 68{" "}
-                <span>4</span>09{" "}
+                <span>(</span> <span>4</span>9 <span>)</span> 173 97 68
+                <span>4</span>09
               </h4>
               <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
                 <path
@@ -108,20 +114,15 @@ const footer = () => {
           <Fotterbottom>
             <Footerrow>
               <Fbcolumn1>
-                {" "}
                 <p> Alle Rechte vorbehalten. </p>
               </Fbcolumn1>
               <Fbcolumn2>
-                {" "}
                 <p>
-                  {" "}
                   © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
                 </p>
               </Fbcolumn2>
-              <Fbcolumn3>
-                {" "}
+              <Fbcolumn3 onClick={scrollToTop}>
                 <p>
-                  {" "}
                   nach oben
                   <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
                     <path
@@ -129,7 +130,7 @@ const footer = () => {
                       stroke="#1D273E"
                       stroke-width="2"
                     />
-                  </svg>{" "}
+                  </svg>
                 </p>
               </Fbcolumn3>
             </Footerrow>
@@ -138,13 +139,10 @@ const footer = () => {
         <Mobileftbottom>
           <Footerrow>
             <Fbcolumn1>
-              {" "}
               <p> Alle Rechte vorbehalten. </p>
             </Fbcolumn1>
-            <Fbcolumn3>
-              {" "}
+            <Fbcolumn3 onClick={scrollToTop}>
               <p>
-                {" "}
                 nach oben
                 <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
                   <path
@@ -152,15 +150,13 @@ const footer = () => {
                     stroke="#1D273E"
                     stroke-width="2"
                   />
-                </svg>{" "}
+                </svg>
               </p>
             </Fbcolumn3>
           </Footerrow>
           <Fbcolumn2>
-            {" "}
             <p>
-              {" "}
-              © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
+              © 202<span>4</span> Wicker <span> &</span> Partners GmbH
             </p>
           </Fbcolumn2>
         </Mobileftbottom>
@@ -169,4 +165,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
