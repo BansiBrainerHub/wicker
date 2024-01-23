@@ -13,7 +13,7 @@ import sliderImg04 from "../assets/images/slider-img-05.png";
 
 import { Customowlslide } from "../assets/style";
 
-const Owlslider = () => {
+const OwlCarouselSlider = () => {
   const options = {
     loop: true,
     center: false,
@@ -92,4 +92,4 @@ const Owlslider = () => {
   );
 };
 
-export default Owlslider;
+export default OwlCarouselSlider;
