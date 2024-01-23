@@ -24,12 +24,12 @@ export const MainIndexpage = styled.div`
 
 export const Headerwrapper = styled.div`
   position: relative;
-  padding-left: 85px;
-  padding-right: 85px;
-  padding-top: 64px;
+  padding: 64px 85px 50px;
   ${Media.md} {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 36px 50px 50px;
+  }
+  ${Media.sm} {
+    padding: 46px 30px;
   }
 `;
 export const Container = styled.div`
