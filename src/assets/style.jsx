@@ -60,15 +60,26 @@ export const DBindingwrapper = styled.div`
     padding: 32px;
     padding-top: 32px;
   }
+  ${Media.md} {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
   p {
     color: #fff;
     font-size: 25px;
     font-weight: 300;
+    ${Media.md} {
+      font-size: 20px;
+    }
   }
   img {
     width: 40px;
     display: block;
     margin: 0 0 0 auto;
+    ${Media.md} {
+      height: 30px;
+    }
   }
   &:hover {
     transform: scale(1.05);
@@ -94,7 +105,7 @@ export const Bindingbtn = styled.div`
 export const Headerbanner = styled.div`
   margin-top: 40px;
   ${Media.sm} {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 `;
 export const Row = styled.div`
@@ -667,6 +678,7 @@ export const Bindingwrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s all ease-in-out;
   ${Media.md} {
     max-width: 225px;
     height: 225px;
@@ -685,12 +697,19 @@ export const Bindingwrapper = styled.div`
     display: block;
     margin: 0 0 0 auto;
   }
+  &:hover {
+    transform: scale(1.05);
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+  }
 `;
 export const Bindingcontent = styled.div`
   max-width: 190px;
   ${Media.md} {
     max-width: 150px;
     padding-top: 20px;
+    display: flex;
+    align-items: end;
   }
 `;
 
@@ -1312,20 +1331,20 @@ export const Customemodalgroup = styled.div`
   .form-control {
     width: 100%;
     border: 1px solid #d9d9d9;
-    border-radius:5px;
+    border-radius: 5px;
     height: 50px;
     padding: 0px 15px;
     box-sizing: border-box;
     font-size: 20px;
-    font-weight:400;
+    font-weight: 400;
     text-transform: uppercase;
     color: rgb(0 0 0 / 50%);
-    letter-spacing:-1px;
+    letter-spacing: -1px;
   }
 
   .css-wmy1p7-ReactDropdownSelect {
     border: 1px solid #d9d9d9 !important;
-    border-radius:5px;
+    border-radius: 5px;
     height: 50px !important;
     padding: 0px 15px;
   }

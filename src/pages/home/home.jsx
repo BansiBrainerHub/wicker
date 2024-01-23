@@ -318,6 +318,7 @@ const home = () => {
             <img src={Rightarrow} />
           </Bindingcontent>
         </Bindingwrapper>
+
         <Footer />
       </MainIndexpage>
     </>
