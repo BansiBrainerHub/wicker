@@ -26,7 +26,13 @@ import {
   Mobileftbottom,
 } from "../../src/assets/style.jsx";
 
-const footer = () => {
+const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <Footersection>
@@ -112,16 +118,12 @@ const footer = () => {
                 <p> Alle Rechte vorbehalten. </p>
               </Fbcolumn1>
               <Fbcolumn2>
-                {" "}
                 <p>
-                  {" "}
                   © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
                 </p>
               </Fbcolumn2>
-              <Fbcolumn3>
-                {" "}
+              <Fbcolumn3 onClick={scrollToTop}>
                 <p>
-                  {" "}
                   <span>nach oben</span>
                   <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
                     <path
@@ -129,7 +131,7 @@ const footer = () => {
                       stroke="#1D273E"
                       stroke-width="2"
                     />
-                  </svg>{" "}
+                  </svg>
                 </p>
               </Fbcolumn3>
             </Footerrow>
@@ -138,13 +140,10 @@ const footer = () => {
         <Mobileftbottom>
           <Footerrow>
             <Fbcolumn1>
-              {" "}
               <p> Alle Rechte vorbehalten. </p>
             </Fbcolumn1>
-            <Fbcolumn3>
-              {" "}
+            <Fbcolumn3 onClick={scrollToTop}>
               <p>
-                {" "}
                 nach oben
                 <svg width="17" height="19" viewBox="0 0 17 19" fill="none">
                   <path
@@ -157,9 +156,7 @@ const footer = () => {
             </Fbcolumn3>
           </Footerrow>
           <Fbcolumn2>
-            {" "}
             <p>
-              {" "}
               © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
             </p>
           </Fbcolumn2>
@@ -169,4 +166,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
