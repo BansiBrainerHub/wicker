@@ -8,13 +8,13 @@ import { Customserviceslider } from "../assets/style";
 
 const serviceowlslider = () => {
   const options = {
-    loop: false,
+    loop: true,
     center: false,
     margin: 20,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 3000,
-    smartSpeed: 450,
+    // autoplayTimeout: 3000,
+    // smartSpeed: 450,
     singleItem: true,
     nav: true,
     navText: [
