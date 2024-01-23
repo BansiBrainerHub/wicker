@@ -25,14 +25,19 @@ const Header = () => {
         </Logowrapper>
         <DBindingwrapper onClick={() => setOpenFirst(true)}>
           <Bindingcontent>
-            <p>unverbindliche Beratung</p>
+            {/* <p>unverbindliche Beratung</p> */}
+            <p>
+              non<span>-</span>binding advice
+            </p>
             <img src={Rightarrow} />
           </Bindingcontent>
         </DBindingwrapper>
-        {
-          openFirst && <ContactModal openFirst={openFirst} handleModalClose={handleModalClose}/>
-        }
-        
+        {openFirst && (
+          <ContactModal
+            openFirst={openFirst}
+            handleModalClose={handleModalClose}
+          />
+        )}
       </Headerwrapper>
     </>
   );

@@ -55,7 +55,7 @@ const Footer = () => {
                       </Column>
                       <Column className="col-lg-12 col-sm-6">
                         <InoutField>
-                          <input type="text" placeholder="Vorname" />
+                          <input type="text" placeholder="Nachname" />
                         </InoutField>
                       </Column>
                     </Row>

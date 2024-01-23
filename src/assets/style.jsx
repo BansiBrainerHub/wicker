@@ -69,6 +69,13 @@ export const DBindingwrapper = styled.div`
     color: #fff;
     font-size: 25px;
     font-weight: 300;
+    font-family: "visbycf", sans-serif;
+    span {
+      font-family: "Helvetica", sans-serif;
+      font {
+        display: none;
+      }
+    }
     ${Media.md} {
       font-size: 20px;
     }
@@ -319,6 +326,7 @@ export const Aboutheading = styled.div`
   }
   a {
     background-color: #111725;
+    border: 2px solid #111725;
     color: #fff;
     text-decoration: none;
     font-size: 19px;
@@ -328,6 +336,12 @@ export const Aboutheading = styled.div`
     width: 100%;
     text-align: center;
     font-family: "visbycf", sans-serif;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+      background-color: transparent;
+      border: 2px solid #111725;
+      color: #111725;
+    }
   }
 `;
 
@@ -378,6 +392,11 @@ export const Innovationcontent = styled.div`
     width: 100%;
     text-align: center;
     font-family: "visbycf", sans-serif;
+    transition: 0.4s all ease-in-out;
+    &:hover {
+      background-color: #111725;
+      color: #fff;
+    }
   }
 `;
 
@@ -448,6 +467,7 @@ export const Copanyblogcontent = styled.div`
     font-size: 25px;
     color: #111725;
     font-family: "visbycf", sans-serif;
+
     ${Media.md} {
       font-size: 18px;
       line-height: 24px;
@@ -724,6 +744,12 @@ export const Bindingwrapper = styled.div`
     color: #fff;
     font-size: 25px;
     font-family: "visbycf", sans-serif;
+    span {
+      font-family: "Helvetica", sans-serif;
+      font {
+        display: none;
+      }
+    }
     ${Media.md} {
       font-size: 20px;
     }
@@ -901,9 +927,16 @@ export const Submitbtn = styled.div`
   width: 100%;
   margin-left: 20px;
   text-align: center;
-  line-height: 54px;
+  line-height: 52px;
   cursor: pointer;
   font-family: "open-sans", sans-serif;
+  transition: 0.4s all ease-in-out;
+  border: 1px solid #1e2941;
+  &:hover {
+    background: transparent;
+    color: #1e2941;
+    border: 1px solid #1e2941;
+  }
   ${Media.sm} {
     margin-left: 0px;
     max-width: 100%;
