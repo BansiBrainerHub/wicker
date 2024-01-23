@@ -21,6 +21,39 @@ body {
   font-weight: 400;
   src: url(../assets/fonts/visbycf-regular.otf);
 }
+
+@font-face {
+  font-family: 'visbycf';
+  src: url('../assets/fonts/FONTSPRINGDEMO-VisbyCFRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'visbycfmedium';
+  src: url('../assets/fonts/FONTSPRINGDEMO-VisbyCFMediumRegular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/Helvetica.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../assets/fonts/HelveticaNeue-Roman.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 h1,
 h2,
 h3,
@@ -162,6 +195,11 @@ img {
   }
   .teaminnerColumn_02 {
     padding-left: 5px !important;
+  }
+  .react-responsive-modal-modal{
+    max-width: 100% !important;
+    padding: 15px;
+    width: calc(100% - 40px);
   }
 }
 

@@ -31,11 +31,11 @@ const Header = () => {
   const options = [
     { 
       value: 1,
-      label: "Leanne Graham"
+      label: "8:00-11:00 Uhr"
     },
     {
       value:  2,
-      label: "Ervin Howell"
+      label: "11:00-15:00 Uhr"
     }
   ];
   return (
@@ -71,7 +71,7 @@ const Header = () => {
                     <input type='text' className='form-control' placeholder='Telefonnummer'></input>
                   </Customemodalgroup>
                   <Customemodalgroup className='form-group'>
-                    <Select options={options} onChange={(values) => this.setValues(values)} />
+                    <Select options={options}  />
                   </Customemodalgroup>
                 </Customemodalrow>
                 <Customemodalrow >

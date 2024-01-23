@@ -1322,12 +1322,18 @@ export const Customemodalrow = styled.div`
   margin-left: -15px;
   margin-right: -15px;
   align-items: center;
+  ${Media.sm} {
+    flex-direction: column;
+  }
 `;
 export const Customemodalgroup = styled.div`
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
+  ${Media.sm} {
+    width: 100%;
+  }
   .form-control {
     width: 100%;
     border: 1px solid #d9d9d9;
@@ -1338,8 +1344,11 @@ export const Customemodalgroup = styled.div`
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
-    color: rgb(0 0 0 / 50%);
     letter-spacing: -1px;
+    font-family: "visbycfmedium";
+    &::placeholder {
+      color: rgb(0 0 0 / 50%);
+    }
   }
 
   .css-wmy1p7-ReactDropdownSelect {
@@ -1347,10 +1356,33 @@ export const Customemodalgroup = styled.div`
     border-radius: 5px;
     height: 50px !important;
     padding: 0px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    &::placeholder {
+      color: rgb(0 0 0 / 50%);
+    }
+    span {
+      text-transform: capitalize;
+    }
   }
   p {
     margin-top: 0px;
     margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: rgb(0 0 0 / 50%);
+    letter-spacing: -1px;
+    font-family: "visbycfmedium";
+    span {
+      margin-right: 46px;
+      cursor: pointer;
+    }
   }
   .w-100 {
     width: 100%;
@@ -1364,15 +1396,34 @@ export const Customemodalgroup1 = styled.div`
   .form-control {
     width: 100%;
     border: 1px solid #d9d9d9;
-    height: 45px;
+    border-radius: 5px;
+    height: 50px;
     padding: 0px 15px;
     box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-family: "visbycfmedium";
+    &::placeholder {
+      color: rgb(0 0 0 / 50%);
+    }
   }
   .text_control {
     width: 100%;
     border: 1px solid #d9d9d9;
     padding: 15px;
     box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-radius: 5px;
+    font-family: "visbycfmedium";
+    resize: vertical;
+    &::placeholder {
+      color: rgb(0 0 0 / 50%);
+    }
   }
   .modalcheckbox {
     margin-left: 30px;
@@ -1384,8 +1435,8 @@ export const Customemodalgroup1 = styled.div`
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    height: 14px;
-    width: 14px;
+    height: 19px;
+    width: 19px;
     background-color: #fff;
     border: 1px solid #1e2940;
   }
@@ -1394,13 +1445,14 @@ export const Customemodalgroup1 = styled.div`
     margin-bottom: 0px;
     color: #000;
     font-size: 10px;
+    padding-left: 30px;
     .checkmark:after {
-      left: 3px;
+      left: 5px;
       top: 1px;
-      width: 4px;
-      height: 6px;
+      width: 5px;
+      height: 10px;
       border: solid #1e2940;
-      border-width: 0 3px 3px 0;
+      border-width: 0 2px 2px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
@@ -1414,9 +1466,10 @@ export const Modalbtn = styled.div`
   border-radius: 8px;
   max-width: 112px;
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto 0px;
   text-align: center;
-  line-height: 54px;
+  line-height: normal;
+  padding: 16px 10px;
   cursor: pointer;
   font-family: "open-sans", sans-serif;
 `;
