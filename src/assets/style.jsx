@@ -313,6 +313,7 @@ export const Aboutheading = styled.div`
     }
     ${Media.md} {
       font-size: 16px;
+      line-height: 20px;
       margin-bottom: 30px;
     }
   }
@@ -449,10 +450,11 @@ export const Copanyblogcontent = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.md} {
       font-size: 18px;
+      line-height: 24px;
     }
   }
   p:first-child {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 `;
 export const Borderline = styled.div`
@@ -525,6 +527,7 @@ export const Teamcardcontent = styled.div`
     }
     ${Media.md} {
       font-size: 12px;
+      line-height: 17px;
     }
   }
 `;
@@ -561,6 +564,11 @@ export const Slidersection = styled.div`
   margin-top: 110px;
   padding-top: 203px;
   padding-bottom: 300px;
+  ${Media.md} {
+    padding-top: 100px;
+    padding-bottom: 170px;
+    margin-top: 40px;
+  }
   ${Media.sm} {
     padding-top: 100px;
     padding-bottom: 220px;
@@ -593,6 +601,9 @@ export const Quotesection = styled.div`
       font-size: 20px;
       line-height: 32px;
     }
+    ${Media.md} {
+      line-height: 44px;
+    }
   }
 `;
 
@@ -610,6 +621,9 @@ export const Faqwrapper = styled.div`
     padding: 36px 20px 80px;
     margin-left: 30px;
     margin-right: 30px;
+  }
+  ${Media.md} {
+    padding: 50px 60px 140px 60px;
   }
   &:before {
     content: "";
@@ -641,9 +655,6 @@ export const Faqheader = styled.div`
       line-height: normal;
       margin-bottom: 20px;
     }
-    ${Media.md} {
-      font-size: 28px;
-    }
   }
   p {
     font-size: 23px;
@@ -653,6 +664,7 @@ export const Faqheader = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.md} {
       font-size: 16px;
+      line-height: 22px;
     }
     ${Media.sm} {
       font-size: 11px;
@@ -682,6 +694,8 @@ export const Bindingwrapper = styled.div`
   ${Media.md} {
     max-width: 225px;
     height: 225px;
+    margin-top: -110px;
+    margin-right: -10px;
   }
 
   p {
@@ -803,6 +817,9 @@ export const Quicklinks = styled.div`
       font-weight: 600;
       margin-bottom: 16px;
       font-family: "visbycf", sans-serif;
+      ${Media.md} {
+        font-size: 14px;
+      }
     }
   }
 `;
@@ -913,6 +930,7 @@ export const Checkbox = styled.div`
 
 export const Fotterbottom = styled.div`
   margin-top: 90px;
+
   p {
     font-size: 17px;
     font-weight: 600;
@@ -921,6 +939,7 @@ export const Fotterbottom = styled.div`
       font-family: "Helvetica", sans-serif;
       font-weight: 500;
     }
+
     ${Media.md} {
       font-size: 14px;
     }
@@ -935,6 +954,9 @@ export const Ftcontactseciton = styled.div`
     margin-bottom: 25px;
     font-weight: 600;
     font-family: "visbycf", sans-serif;
+    ${Media.md} {
+      font-size: 14px;
+    }
     span {
       font-family: "Helvetica", sans-serif;
       font-weight: 500;
@@ -964,6 +986,11 @@ export const Fbcolumn2 = styled.div`
   ${Media.sm} {
     text-align: center;
     margin-top: 15px;
+  }
+  p {
+    ${Media.md} {
+      font-size: 11px;
+    }
   }
 `;
 export const Fbcolumn3 = styled.div``;
@@ -1035,15 +1062,15 @@ export const Customaccordian = styled.div`
       font-size: 20px;
       line-height: normal;
     }
-    ${Media.md} {
-      font-size: 12px;
-    }
   }
   .accordion {
     border: none;
   }
   .accordion__item {
     border-bottom: 2px solid #111725;
+    ${Media.md} {
+      padding-top: 30px;
+    }
   }
   .accordion__button[aria-expanded="true"],
   .accordion__button[aria-selected="true"] {
