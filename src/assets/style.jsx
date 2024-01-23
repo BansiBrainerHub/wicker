@@ -452,6 +452,10 @@ export const Copanyblogcontent = styled.div`
       font-size: 18px;
       line-height: 24px;
     }
+    ${Media.sm} {
+      font-size: 13px;
+      line-height: 20px;
+    }
   }
   p:first-child {
     margin-bottom: 30px;
@@ -516,6 +520,9 @@ export const Teamcardcontent = styled.div`
     ${Media.md} {
       font-size: 24px;
     }
+    ${Media.sm} {
+      font-size: 40px;
+    }
   }
   p {
     font-size: 16px;
@@ -528,6 +535,10 @@ export const Teamcardcontent = styled.div`
     ${Media.md} {
       font-size: 12px;
       line-height: 17px;
+    }
+    ${Media.sm} {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 `;
@@ -555,6 +566,10 @@ export const Teamdiscription = styled.div`
       font-size: 12px;
       line-height: 17px;
       margin-bottom: 30px;
+    }
+    ${Media.sm} {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 `;
@@ -597,12 +612,12 @@ export const Quotesection = styled.div`
     display: inline;
     line-height: 48px;
     font-family: "visbycf", sans-serif;
+    ${Media.md} {
+      line-height: 44px;
+    }
     ${Media.sm} {
       font-size: 20px;
       line-height: 32px;
-    }
-    ${Media.md} {
-      line-height: 44px;
     }
   }
 `;
@@ -617,13 +632,13 @@ export const Faqwrapper = styled.div`
   background: #fff;
   padding: 50px 60px;
   border-radius: 20px;
+  ${Media.md} {
+    padding: 50px 60px 140px 60px;
+  }
   ${Media.sm} {
     padding: 36px 20px 80px;
     margin-left: 30px;
     margin-right: 30px;
-  }
-  ${Media.md} {
-    padding: 50px 60px 140px 60px;
   }
   &:before {
     content: "";
@@ -654,6 +669,9 @@ export const Faqheader = styled.div`
       font-size: 51px;
       line-height: normal;
       margin-bottom: 20px;
+    }
+    ${Media.md} {
+      font-size: 28px;
     }
   }
   p {
@@ -697,6 +715,10 @@ export const Bindingwrapper = styled.div`
     margin-top: -110px;
     margin-right: -10px;
   }
+  ${Media.sm} {
+    margin-top: -60px;
+    margin-right: 0;
+  }
 
   p {
     color: #fff;
@@ -710,6 +732,9 @@ export const Bindingwrapper = styled.div`
     width: 40px;
     display: block;
     margin: 0 0 0 auto;
+    ${Media.sm} {
+      height: 30px;
+    }
   }
   &:hover {
     transform: scale(1.05);
@@ -751,6 +776,10 @@ export const Footerinfo = styled.div`
     font-weight: 600;
     ${Media.md} {
       font-size: 24px;
+    }
+    ${Media.sm} {
+      font-size: 36px;
+      font-weight: normal;
     }
   }
   p {
@@ -1062,6 +1091,10 @@ export const Customaccordian = styled.div`
       font-size: 20px;
       line-height: normal;
     }
+    ${Media.sm} {
+      font-size: 12px;
+      padding: 24px 0;
+    }
   }
   .accordion {
     border: none;
@@ -1070,6 +1103,9 @@ export const Customaccordian = styled.div`
     border-bottom: 2px solid #111725;
     ${Media.md} {
       padding-top: 30px;
+    }
+    ${Media.sm} {
+      padding-top: 0px;
     }
   }
   .accordion__button[aria-expanded="true"],
