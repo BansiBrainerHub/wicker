@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Header from "../../components/header";
-import OwlSlider from "../../components/Owlslider";
+import OwlCarouselSlider from "../../components/owlcarouselslider";
 import Faqaccordian from "../../components/accordian";
 import "../../assets/common-style.css";
 import Footer from "../../components/footer";
@@ -293,7 +293,7 @@ const home = () => {
               </Column>
             </Row>
           </Container>
-          <OwlSlider />
+          <OwlCarouselSlider />
         </Slidersection>
         <Faqwrapper>
           <Faqheader>
