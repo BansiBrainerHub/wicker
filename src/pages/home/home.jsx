@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import ContactModal from "../../components/contactmodal";
 import Header from "../../components/header";
 import OwlCarouselSlider from "../../components/owlcarouselslider";
@@ -319,7 +319,10 @@ const Home = () => {
         </Faqwrapper>
         <Bindingwrapper onClick={() => setOpenFirst(true)}>
           <Bindingcontent>
-            <p>unverbindliche Beratung</p>
+            {/* <p>unverbindliche Beratung</p> */}
+            <p>
+              non<span>-</span>binding advice
+            </p>
             <img src={Rightarrow} />
           </Bindingcontent>
         </Bindingwrapper>
