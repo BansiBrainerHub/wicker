@@ -64,7 +64,9 @@ const Home = () => {
         <Headerbanner>
           <Container>
             <Bannerheading>
-              <h2> Generationen verbinden, Vermögen gestalten </h2>
+              <h2>
+                Generationen verbinden, Verm<span>ö</span>gen gestalten{" "}
+              </h2>
             </Bannerheading>
             <Desktopview>
               <Row className="banner_alignment">
@@ -96,7 +98,7 @@ const Home = () => {
               </Topbannerimg>
               <MobilebannerContent>
                 <Row className="justif_content">
-                  <Column>
+                  <Column className="full_width">
                     <Bannerleftcontent>
                       <p>
                         Wicker <span>&</span> Partner <span>-</span> Seit zwei
