@@ -25,10 +25,10 @@ const Header = () => {
         </Logowrapper>
         <DBindingwrapper onClick={() => setOpenFirst(true)}>
           <Bindingcontent>
-            {/* <p>unverbindliche Beratung</p> */}
-            <p>
+            <p>unverbindliche Beratung</p>
+            {/* <p>
               non<span>-</span>binding advice
-            </p>
+            </p> */}
             <img src={Rightarrow} />
           </Bindingcontent>
         </DBindingwrapper>

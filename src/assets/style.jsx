@@ -16,6 +16,7 @@ export const Media = {
   ss: "@media(max-width:640px)",
   xs: "@media(max-width:480px)",
   xxs: "@media(max-width:404px)",
+  xxxs: "@media(max-width:360px)",
 };
 
 export const MainIndexpage = styled.div`
@@ -55,14 +56,22 @@ export const DBindingwrapper = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 42px;
-  padding-top: 82px;
+  // padding-top: 88px;
+  height: 240px;
   ${Media.ss} {
     padding: 32px;
     padding-top: 32px;
   }
   ${Media.md} {
-    padding-top: 40px;
-    padding-bottom: 80px;
+    // padding-top: 40px;
+    // padding-bottom: 80px;
+    height: 200px;
+  }
+  ${Media.xxs} {
+    padding: 24px;
+    padding-top: 4px;
+    padding-right: 10px;
+    height: 180px;
   }
 
   p {
@@ -85,7 +94,14 @@ export const DBindingwrapper = styled.div`
     display: block;
     margin: 0 0 0 auto;
     ${Media.md} {
-      height: 30px;
+      height: 20px;
+      position: absolute;
+      right: 40px;
+      bottom: 76px;
+      width: 25px;
+    }
+    ${Media.xxs} {
+      right: 20px;
     }
   }
   &:hover {
@@ -96,6 +112,9 @@ export const DBindingwrapper = styled.div`
 `;
 export const Logowrapper = styled.div`
   width: 140px;
+  ${Media.xxs} {
+    width: 100px;
+  }
 `;
 
 export const Bindingbtn = styled.div`
@@ -111,9 +130,6 @@ export const Bindingbtn = styled.div`
 
 export const Headerbanner = styled.div`
   margin-top: 40px;
-  ${Media.sm} {
-    margin-top: 20px;
-  }
 `;
 export const Row = styled.div`
   display: flex;
@@ -156,6 +172,12 @@ export const Bannerheading = styled.div`
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: "visbycf", sans-serif;
+    span {
+      ${Media.md} {
+        font-family: system-ui;
+        font-weight: 400;
+      }
+    }
     ${Media.lg} {
       font-size: 68px;
       line-height: 78px;
@@ -172,6 +194,10 @@ export const Bannerheading = styled.div`
       font-size: 32px;
       line-height: 35px;
     }
+    ${Media.xxs} {
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
   ${Media.lg} {
     margin-left: 90px;
@@ -185,6 +211,9 @@ export const Bannerheading = styled.div`
   ${Media.ss} {
     max-width: 500px;
     margin: 0 auto -16px;
+  }
+  ${Media.xxs} {
+    margin: 0 auto -14px;
   }
 `;
 export const Desktopview = styled.div`
@@ -229,6 +258,10 @@ export const Bannerleftcontent = styled.div`
   ${Media.sm} {
     margin-right: 0px;
   }
+  ${Media.xxs} {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
 
   p {
     font-size: 20px;
@@ -242,6 +275,11 @@ export const Bannerleftcontent = styled.div`
     }
     ${Media.md} {
       font-size: 16px;
+      max-width: 180px;
+    }
+    ${Media.xxs} {
+      font-size: 16px;
+      max-width: 100%;
     }
   }
 `;
@@ -733,7 +771,7 @@ export const Bindingwrapper = styled.div`
     max-width: 225px;
     height: 225px;
     margin-top: -110px;
-    margin-right: -10px;
+    // margin-right: -10px;
   }
   ${Media.sm} {
     margin-top: -60px;
@@ -772,9 +810,9 @@ export const Bindingcontent = styled.div`
   max-width: 190px;
   ${Media.md} {
     max-width: 150px;
-    padding-top: 20px;
-    display: flex;
-    align-items: end;
+    // padding-top: 20px;
+    // display: flex;
+    // align-items: end;
   }
 `;
 
@@ -807,6 +845,10 @@ export const Footerinfo = styled.div`
       font-size: 36px;
       font-weight: normal;
     }
+    ${Media.xxs} {
+      font-size: 26px;
+      font-weight: normal;
+    }
   }
   p {
     font-size: 21px;
@@ -819,6 +861,9 @@ export const Footerinfo = styled.div`
     }
     ${Media.md} {
       font-size: 14px;
+    }
+    ${Media.xxs} {
+      font-size: 12px;
     }
   }
 `;
@@ -884,6 +929,7 @@ export const Quicklinks = styled.div`
       font-family: "visbycf", sans-serif;
       ${Media.md} {
         font-size: 14px;
+        font-weight: 400;
       }
     }
   }
@@ -911,6 +957,7 @@ export const InoutField = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.sm} {
       margin-bottom: 15px;
+      font-size: 14px;
     }
   }
   ::placeholder {
@@ -958,6 +1005,9 @@ export const Checkbox = styled.div`
     margin-top: 30px;
     color: #8e8e8e;
     font-family: "visbycf", sans-serif;
+    ${Media.xs} {
+      font-size: 12px;
+    }
   }
 
   .checkBox input {
@@ -1031,12 +1081,15 @@ export const Ftcontactseciton = styled.div`
     font-family: "visbycf", sans-serif;
     ${Media.md} {
       font-size: 14px;
+      font-family: "visbycfmedium", sans-serif;
     }
-
     span {
       font-family: "Helvetica", sans-serif;
-      font-weight: 500;
+      font-weight: 600;
     }
+  }
+  p {
+    margin-bottom: 5px;
   }
   img {
     width: 28px;
@@ -1054,10 +1107,20 @@ export const Footerrow = styled.div`
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-item: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
-export const Fbcolumn1 = styled.div``;
+export const Fbcolumn1 = styled.div`
+  ${Media.md} {
+    p {
+      font-family: "visbycfmedium", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+`;
 export const Fbcolumn2 = styled.div`
   ${Media.sm} {
     text-align: center;
@@ -1074,6 +1137,13 @@ export const Fbcolumn3 = styled.div`
   p {
     display: flex;
     gap: 5px;
+  }
+  ${Media.md} {
+    p {
+      font-family: "visbycfmedium", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+    }
   }
 `;
 export const Mobileftbottom = styled.div`
