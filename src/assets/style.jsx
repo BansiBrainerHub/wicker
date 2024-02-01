@@ -774,8 +774,8 @@ export const Bindingwrapper = styled.div`
   align-items: center;
   transition: 0.4s all ease-in-out;
   ${Media.md} {
-    max-width: 225px;
-    height: 225px;
+    max-width: 223px;
+    height: 223px;
     margin-top: -110px;
     // margin-right: -10px;
     right:-20px;
@@ -784,7 +784,6 @@ export const Bindingwrapper = styled.div`
     margin-top: -60px;
     margin-right: 0;
   }
-
   p {
     color: #fff;
     font-size: 25px;
