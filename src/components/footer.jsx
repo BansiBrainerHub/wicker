@@ -61,7 +61,7 @@ const Footer = () => {
                     </Row>
                     <Row>
                       <Column className="col-12">
-                        <InoutField className="mt-20">
+                        <InoutField className="mt-30">
                           <input type="text" placeholder="Telefon" />
                         </InoutField>
                       </Column>

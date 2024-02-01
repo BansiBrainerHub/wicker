@@ -21,6 +21,9 @@ export const Media = {
 
 export const MainIndexpage = styled.div`
   margin-bottom: 20px;
+  ${Media.md} {
+    overflow-x: hidden;
+  }
 `;
 
 export const Headerwrapper = styled.div`
@@ -217,6 +220,9 @@ export const Bannerheading = styled.div`
   }
 `;
 export const Desktopview = styled.div`
+  ${Media.md} {
+    padding-left: 35px;
+  }
   ${Media.sm} {
     display: none;
   }
@@ -728,7 +734,7 @@ export const Faqheader = styled.div`
       line-height: normal;
       margin-bottom: 20px;
     }
-    ${Media.md} {
+    ${Media.sm} {
       font-size: 28px;
     }
   }
@@ -772,6 +778,7 @@ export const Bindingwrapper = styled.div`
     height: 225px;
     margin-top: -110px;
     // margin-right: -10px;
+    right:-20px;
   }
   ${Media.sm} {
     margin-top: -60px;
@@ -809,10 +816,17 @@ export const Bindingwrapper = styled.div`
 export const Bindingcontent = styled.div`
   max-width: 190px;
   ${Media.md} {
-    max-width: 150px;
+    max-width: 160px;
     // padding-top: 20px;
     // display: flex;
     // align-items: end;
+  }
+  ${Media.sm} {
+    max-width: 150px;
+  }
+  &.ver2{
+    display: flex;
+    align-items: end;
   }
 `;
 
@@ -821,7 +835,7 @@ export const Bindingcontent = styled.div`
 export const Footersection = styled.div`
   margin-left: 40px;
   margin-right: 40px;
-  ${Media.md} {
+  ${Media.sm} {
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -840,6 +854,7 @@ export const Footerinfo = styled.div`
     font-weight: 600;
     ${Media.md} {
       font-size: 24px;
+      font-weight: 500;
     }
     ${Media.sm} {
       font-size: 36px;
@@ -956,7 +971,7 @@ export const InoutField = styled.div`
     color: #111725;
     font-family: "visbycf", sans-serif;
     ${Media.sm} {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       font-size: 14px;
     }
   }
@@ -964,12 +979,22 @@ export const InoutField = styled.div`
     color: #b8b8b8;
     font-family: "visbycf", sans-serif;
   }
+  &.mt-30{
+    ${Media.sm} {
+      margin-top: 20px;
+    }
+    input {
+      ${Media.sm} {
+        margin-bottom: 20px;
+      }
+    }
+  }
 `;
 
 export const Submitbtn = styled.div`
   background: #1e2941;
   color: #fff;
-  border-radius: 8px;
+  border-radius: 5px;
   max-width: 112px;
   width: 100%;
   margin-left: 20px;
@@ -1052,7 +1077,9 @@ export const Checkbox = styled.div`
 
 export const Fotterbottom = styled.div`
   margin-top: 90px;
-
+  ${Media.md} {
+    margin-top: 40px;
+  }
   p {
     font-size: 17px;
     font-weight: 600;
@@ -1061,7 +1088,6 @@ export const Fotterbottom = styled.div`
       font-family: "Helvetica", sans-serif;
       font-weight: 500;
     }
-
     ${Media.md} {
       font-size: 14px;
     }
@@ -1103,6 +1129,10 @@ export const Desktopftbottom = styled.div`
 export const Footerrow = styled.div`
   display: flex;
   justify-content: space-between;
+  ${Media.md} {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   ${Media.sm} {
     margin-top: 20px;
     display: flex;

@@ -10,7 +10,7 @@ import {
 } from "react-accessible-accordion";
 import { Customaccordian } from "../assets/style";
 
-const accordian = () => {
+const Accordian = () => {
   return (
     <>
       <Customaccordian>
@@ -185,4 +185,4 @@ const accordian = () => {
   );
 };
 
-export default accordian;
+export default Accordian;

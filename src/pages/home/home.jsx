@@ -320,7 +320,7 @@ const Home = () => {
           <Faqaccordian />
         </Faqwrapper>
         <Bindingwrapper onClick={() => setOpenFirst(true)}>
-          <Bindingcontent>
+          <Bindingcontent className="ver2">
             {/* <p>unverbindliche Beratung</p> */}
             <p>
               non<span>-</span>binding advice

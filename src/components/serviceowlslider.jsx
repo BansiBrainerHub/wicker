@@ -13,8 +13,6 @@ const serviceowlslider = () => {
     margin: 20,
     autoplay: true,
     dots: false,
-    // autoplayTimeout: 3000,
-    // smartSpeed: 450,
     singleItem: true,
     nav: true,
     navText: [
@@ -28,10 +26,10 @@ const serviceowlslider = () => {
       600: {
         items: 1.5,
       },
-      1000: {
-        items: 1.5,
+      992: {
+        items: 3,
       },
-    },
+    }
   };
   return (
     <Customserviceslider>
