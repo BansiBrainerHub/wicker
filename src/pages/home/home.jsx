@@ -322,9 +322,7 @@ const Home = () => {
         <Bindingwrapper onClick={() => setOpenFirst(true)}>
           <Bindingcontent className="ver2">
             {/* <p>unverbindliche Beratung</p> */}
-            <p>
-              non<span>-</span>binding advice
-            </p>
+            <p>unverbindliche Beratung</p>
             <img src={Rightarrow} />
           </Bindingcontent>
         </Bindingwrapper>

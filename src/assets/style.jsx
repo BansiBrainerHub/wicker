@@ -16,7 +16,6 @@ export const Media = {
   ss: "@media(max-width:640px)",
   xs: "@media(max-width:480px)",
   xxs: "@media(max-width:404px)",
-  xxxs: "@media(max-width:360px)",
 };
 
 export const MainIndexpage = styled.div`
@@ -66,15 +65,17 @@ export const DBindingwrapper = styled.div`
     padding-top: 32px;
   }
   ${Media.md} {
-    // padding-top: 40px;
-    // padding-bottom: 80px;
     height: 200px;
+  }
+  ${Media.ss} {
+    height: 230px;
+    padding-top: 0px;
   }
   ${Media.xxs} {
     padding: 24px;
     padding-top: 4px;
-    padding-right: 10px;
-    height: 180px;
+    padding-right: 0px;
+    height: 200px;
   }
 
   p {
@@ -103,8 +104,12 @@ export const DBindingwrapper = styled.div`
       bottom: 76px;
       width: 25px;
     }
+    ${Media.ss} {
+      bottom: 106px;
+    }
     ${Media.xxs} {
       right: 20px;
+      bottom: 76px;
     }
   }
   &:hover {
@@ -113,6 +118,13 @@ export const DBindingwrapper = styled.div`
     cursor: pointer;
   }
 `;
+export const DBindingcontent = styled.div`
+  max-width: 190px;
+  ${Media.md} {
+    max-width: 150px;
+  }
+`;
+
 export const Logowrapper = styled.div`
   width: 140px;
   ${Media.xxs} {
@@ -287,6 +299,11 @@ export const Bannerleftcontent = styled.div`
       font-size: 16px;
       max-width: 100%;
     }
+    strong {
+      ${Media.md} {
+        font-weight: normal;
+      }
+    }
   }
 `;
 export const Bannerrightcontent = styled.div`
@@ -301,6 +318,12 @@ export const Bannerrightcontent = styled.div`
     }
     ${Media.md} {
       font-size: 16px;
+    }
+    ${Media.sm} {
+      text-align: right;
+    }
+    ${Media.xxs} {
+      text-align: left;
     }
   }
   ${Media.lg} {
@@ -477,6 +500,7 @@ export const Companyblog = styled.div`
     margin-bottom: 0px;
   }
   ${Media.sm} {
+    margin-top: 45px;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -534,6 +558,9 @@ export const Borderline = styled.div`
   ${Media.md} {
     max-width: 850px;
     margin: 89px auto;
+  }
+  ${Media.sm} {
+    margin: 60px auto;
   }
 `;
 
@@ -617,6 +644,7 @@ export const Teamdiscription = styled.div`
   ${Media.sm} {
     margin-right: 0px;
     margin-left: 0px;
+    margin-top: 50px;
   }
   p {
     margin-bottom: 40px;
@@ -646,12 +674,12 @@ export const Slidersection = styled.div`
   ${Media.md} {
     padding-top: 100px;
     padding-bottom: 170px;
-    margin-top: 40px;
+    margin-top: 140px;
   }
   ${Media.sm} {
     padding-top: 100px;
     padding-bottom: 220px;
-    margin-top: 40px;
+    margin-top: 80px;
   }
 `;
 
@@ -769,9 +797,9 @@ export const Bindingwrapper = styled.div`
   background-color: #000;
   margin: -40px 0 30px auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   transition: 0.4s all ease-in-out;
   ${Media.md} {
     max-width: 223px;
@@ -787,6 +815,7 @@ export const Bindingwrapper = styled.div`
   p {
     color: #fff;
     font-size: 25px;
+    line-height: 35px;
     font-family: "visbycf", sans-serif;
     span {
       font-family: "Helvetica", sans-serif;
@@ -801,9 +830,15 @@ export const Bindingwrapper = styled.div`
   img {
     width: 40px;
     display: block;
-    margin: 0 0 0 auto;
-    ${Media.sm} {
-      height: 30px;
+    position: absolute;
+    bottom: -26px;
+    right: 0px;
+    ${Media.md} {
+      width: 30px;
+      display: block;
+      position: absolute;
+      bottom: 4px;
+      right: 0px;
     }
   }
   &:hover {
@@ -814,8 +849,13 @@ export const Bindingwrapper = styled.div`
 `;
 export const Bindingcontent = styled.div`
   max-width: 190px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
   ${Media.md} {
     max-width: 160px;
+    left:35px;
     // padding-top: 20px;
     // display: flex;
     // align-items: end;
@@ -837,6 +877,7 @@ export const Footersection = styled.div`
   ${Media.sm} {
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 40px;
   }
 `;
 
@@ -1222,9 +1263,9 @@ export const Customaccordian = styled.div`
       margin-right: 0px;
       right: 7px;
       z-index: 9;
-      top: 40%;
+      top: 25px;
       ${Media.md} {
-        top: 36%;
+        top: 14px;
       }
     }
     &:after {
@@ -1236,8 +1277,11 @@ export const Customaccordian = styled.div`
       transform: rotate(90deg);
       position: absolute;
       right: 0px;
-      top: 48%;
+      top: 32px;
       z-index: 9;
+      ${Media.md} {
+        top: 22px;
+      }
     }
     ${Media.md} {
       font-size: 20px;
@@ -1245,7 +1289,8 @@ export const Customaccordian = styled.div`
     }
     ${Media.sm} {
       font-size: 12px;
-      padding: 24px 0;
+      padding-top: 24px;
+      padding-bottom: 24px;
     }
   }
   .accordion {
@@ -1278,7 +1323,7 @@ export const Customaccordian = styled.div`
 
 export const Customserviceslider = styled.div`
   ${Media.sm} {
-    margin-top: 100px;
+    margin-top: 120px;
   }
 
   h5 {

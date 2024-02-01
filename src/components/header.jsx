@@ -9,7 +9,7 @@ import {
   Headerwrapper,
   Logowrapper,
   DBindingwrapper,
-  Bindingcontent,
+  DBindingcontent,
 } from "../assets/style.jsx";
 
 const Header = () => {
@@ -24,13 +24,13 @@ const Header = () => {
           <img src={LogoImg} alt="logo" />
         </Logowrapper>
         <DBindingwrapper onClick={() => setOpenFirst(true)}>
-          <Bindingcontent>
+          <DBindingcontent>
             <p>unverbindliche Beratung</p>
             {/* <p>
               non<span>-</span>binding advice
             </p> */}
             <img src={Rightarrow} />
-          </Bindingcontent>
+          </DBindingcontent>
         </DBindingwrapper>
         {openFirst && (
           <ContactModal

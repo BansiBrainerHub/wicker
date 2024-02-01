@@ -18,7 +18,7 @@ const Accordian = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                Wie verdiene ich mit der Immobilie Geld?
+                <p> Wie verdiene ich mit der Immobilie Geld? </p>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
@@ -49,7 +49,7 @@ const Accordian = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                Welche Kosten entstehen?
+                <p> Welche Kosten entstehen? </p>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
@@ -74,7 +74,9 @@ const Accordian = () => {
           </AccordionItem>
           <AccordionItem>
             <AccordionItemHeading>
-              <AccordionItemButton>Welche Risiken gibt es?</AccordionItemButton>
+              <AccordionItemButton>
+                <p> Welche Risiken gibt es? </p>
+              </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
               <p>
@@ -105,7 +107,7 @@ const Accordian = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                Welche Immobilien kommen in Frage?
+                <p> Welche Immobilien kommen in Frage? </p>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
@@ -134,7 +136,7 @@ const Accordian = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                Welche Voraussetzungen müssen gegeben sein?
+                <p> Welche Voraussetzungen müssen gegeben sein? </p>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
@@ -159,7 +161,7 @@ const Accordian = () => {
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>
-                Wer ist für die Instandhaltung der Immobilie zuständig?
+                <p> Wer ist für die Instandhaltung der Immobilie zuständig? </p>
               </AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
