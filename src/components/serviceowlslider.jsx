@@ -27,7 +27,7 @@ const serviceowlslider = () => {
         items: 1.5,
       },
       992: {
-        items: 3,
+        items: 1.5,
       },
     }
   };
