@@ -60,7 +60,7 @@ export const DBindingwrapper = styled.div`
   padding: 42px;
   // padding-top: 88px;
   height: 240px;
-  ${Media.ss} {
+  s ${Media.ss} {
     padding: 32px;
     padding-top: 32px;
   }
@@ -97,19 +97,22 @@ export const DBindingwrapper = styled.div`
     width: 40px;
     display: block;
     margin: 0 0 0 auto;
+    position: relative;
+    top: -13px;
     ${Media.md} {
       height: 20px;
       position: absolute;
       right: 40px;
       bottom: 76px;
       width: 25px;
+      top: unset;
     }
     ${Media.ss} {
       bottom: 106px;
     }
     ${Media.xxs} {
       right: 20px;
-      bottom: 76px;
+      bottom: 83px;
     }
   }
   &:hover {
@@ -187,23 +190,32 @@ export const Bannerheading = styled.div`
     margin-top: 0px;
     margin-bottom: 0px;
     font-family: "visbycf", sans-serif;
+    letter-spacing: -2.2px;
+    max-width: 80%;
+    margin: 0px auto;
     span {
       ${Media.md} {
         font-family: system-ui;
         font-weight: 400;
       }
     }
+    ${Media.xl} {
+      max-width: 90%;
+    }
     ${Media.lg} {
       font-size: 68px;
       line-height: 78px;
+      max-width: 97%;
+      letter-spacing: -1px;
     }
     ${Media.md} {
       font-size: 48px;
       line-height: 48px;
+      max-width: 100%;
     }
     ${Media.sm} {
       font-size: 36px;
-      line-height: 48px;
+      line-height: 40px;
     }
     ${Media.ss} {
       font-size: 32px;
@@ -217,7 +229,10 @@ export const Bannerheading = styled.div`
   ${Media.lg} {
     margin-left: 90px;
     margin-right: 90px;
-    margin-bottom: -18px;
+    margin-bottom: -30px;
+  }
+  ${Media.md} {
+    margin-bottom: -35px;
   }
   ${Media.sm} {
     max-width: 500px;
@@ -446,6 +461,7 @@ export const Innovationcontent = styled.div`
     }
     ${Media.md} {
       font-size: 24px;
+      margin-bottom: 24px;
     }
   }
   a {
@@ -806,7 +822,7 @@ export const Bindingwrapper = styled.div`
     height: 223px;
     margin-top: -110px;
     // margin-right: -10px;
-    right:-20px;
+    right: -20px;
   }
   ${Media.sm} {
     margin-top: -60px;
@@ -855,7 +871,7 @@ export const Bindingcontent = styled.div`
   transform: translateY(-50%);
   ${Media.md} {
     max-width: 160px;
-    left:35px;
+    left: 35px;
     // padding-top: 20px;
     // display: flex;
     // align-items: end;
@@ -863,7 +879,7 @@ export const Bindingcontent = styled.div`
   ${Media.sm} {
     max-width: 150px;
   }
-  &.ver2{
+  &.ver2 {
     display: flex;
     align-items: end;
   }
@@ -1019,7 +1035,7 @@ export const InoutField = styled.div`
     color: #b8b8b8;
     font-family: "visbycf", sans-serif;
   }
-  &.mt-30{
+  &.mt-30 {
     ${Media.sm} {
       margin-top: 20px;
     }
@@ -1330,7 +1346,7 @@ export const Customserviceslider = styled.div`
     font-size: 31px;
     font-weight: 600;
     line-height: 24px;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
     margin-top: 24px;
     color: #bdbdbd;
     font-family: "visbycf", sans-serif;

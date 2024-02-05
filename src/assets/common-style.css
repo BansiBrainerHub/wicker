@@ -90,9 +90,13 @@ img {
   background-image: url("../assets/images/innovation_background_img.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 354px 50px;
+  padding: 354px 70px;
   background-position: center center;
   min-height: 980px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .col-12 {
@@ -191,7 +195,7 @@ img {
 }
 @media only screen and (max-width: 991px) {
   .innovation_bg {
-    padding: 202px 50px;
+    padding: 202px 18px;
   }
   .teaminnerColumn_01 {
     padding-right: 5px !important;
@@ -220,7 +224,7 @@ img {
     padding-left: 15px !important;
   }
   .innovation_bg {
-    padding: 202px 20px;
+    padding: 202px 15px;
   }
   .mt-15 {
     margin-top: 0px;
