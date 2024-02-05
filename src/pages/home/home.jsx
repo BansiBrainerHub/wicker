@@ -223,7 +223,7 @@ const Home = () => {
                       </Teamcardcontent>
                     </Teamcard>
                   </Column>
-                  <Column className="col-md-6 col-12  teaminnerColumn_02">
+                  <Column className="col-md-6 col-12 teaminnerColumn_02">
                     <Teamcard>
                       <img src={Teamimg02} alt="team image" />
                       <Teamcardcontent>

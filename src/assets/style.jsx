@@ -28,6 +28,7 @@ export const MainIndexpage = styled.div`
 export const Headerwrapper = styled.div`
   position: relative;
   padding: 64px 85px 50px;
+  overflow: hidden;
   ${Media.md} {
     padding: 36px 50px 50px;
   }
@@ -50,17 +51,15 @@ export const DBindingwrapper = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: -22px;
+  top: -90px;
   padding-top: 80px;
   transition: 0.4s all ease-in-out;
-  background: url(${BindingbtnImg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 42px;
-  // padding-top: 88px;
-  height: 240px;
-  s ${Media.ss} {
+  height: 325px;
+  width: 325px;
+  background: #000;
+  border-radius:200px;
+  ${Media.ss} {
     padding: 32px;
     padding-top: 32px;
   }
@@ -82,7 +81,7 @@ export const DBindingwrapper = styled.div`
     color: #fff;
     font-size: 25px;
     font-weight: 300;
-    font-family: "visbycf", sans-serif;
+    font-family: 'visbycf';
     span {
       font-family: "Helvetica", sans-serif;
       font {
@@ -485,10 +484,12 @@ export const Innovationcontent = styled.div`
 
 export const Companyblog = styled.div`
   margin-top: 150px;
-  margin-bottom: 88px;
+  ${'' /* margin-bottom: 88px; */}
   .blog_img {
-    flex: 0 0 40%;
-    max-width: 40%;
+    ${'' /* flex: 0 0 40%;
+    max-width: 40%; */}
+    margin-left: 97px;
+    margin-right: 170px;
     ${Media.md} {
       flex: 0 0 30%;
       max-width: 30%;
@@ -500,7 +501,7 @@ export const Companyblog = styled.div`
   }
   .blog_content {
     flex: 0 0 60%;
-    max-width: 60%;
+    max-width: 706px;
     ${Media.md} {
       flex: 0 0 70%;
       max-width: 70%;
@@ -569,7 +570,7 @@ export const Borderline = styled.div`
   margin-top: 88px;
   margin-bottom: 128px;
   max-width: 1200px;
-  margin-left: auto;
+  margin-left: 97px;
   margin-right: auto;
   ${Media.md} {
     max-width: 850px;
@@ -581,6 +582,8 @@ export const Borderline = styled.div`
 `;
 
 export const Teamsection = styled.div`
+  margin-left:97px;
+  margin-right:73px;
   ${Media.md} {
     margin-left: 50px;
     margin-right: 50px;
@@ -1418,9 +1421,10 @@ export const Customserviceslider = styled.div`
   .owl-carousel {
     .owl-nav {
       display: block;
-      margin-top: 50px;
+      margin-top: 65px;
       clear: both;
       text-align: right;
+      margin-right: 70px;
       .nav-btn {
         background-repeat: no-repeat;
         width: 18px;
