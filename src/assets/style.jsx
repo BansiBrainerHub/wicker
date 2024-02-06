@@ -10,6 +10,7 @@ import ArrowBG from "../assets/images/arrow-bg.png";
 export const Media = {
   xxl: "@media(max-width:1600px)",
   xl: "@media(max-width:1440px)",
+  xl2: "@media(max-width:1360px)",
   lg: "@media(max-width:1200px)",
   md: "@media(max-width:992px)",
   sm: "@media(max-width:768px)",
@@ -236,6 +237,11 @@ export const Bannerheading = styled.div`
   }
 `;
 export const Desktopview = styled.div`
+  .banner_alignment{
+    ${Media.md} {
+      justify-content:space-between;
+    }
+  }
   ${Media.md} {
     padding-left: 35px;
   }
@@ -297,7 +303,7 @@ export const Bannerleftcontent = styled.div`
     }
     ${Media.md} {
       font-size: 16px;
-      max-width: 180px;
+      ${'' /* max-width: 180px; */}
     }
     ${Media.xxs} {
       font-size: 16px;
@@ -351,7 +357,7 @@ export const Containerfluid = styled.div`
     margin-left: 70px;
   }
   ${Media.md} {
-    margin-left: 50px;
+    margin-left: 35px;
   }
   ${Media.sm} {
     margin-left: 15px;
@@ -419,7 +425,7 @@ export const Aboutheading = styled.div`
 // innovation css start
 
 export const Innovationbanner = styled.div`
-  margin-top: 120px;
+  margin-top: 140px;
 `;
 export const Innovationcontent = styled.div`
   text-align: center;
@@ -474,19 +480,14 @@ export const Innovationcontent = styled.div`
 
 export const Companyblog = styled.div`
   margin-top: 150px;
-  ${'' /* margin-bottom: 88px; */}
   .blog_img {
-    ${'' /* flex: 0 0 40%;
-    max-width: 40%; */}
     margin-left: 97px;
     margin-right: 170px;
-    ${Media.md} {
-      flex: 0 0 30%;
-      max-width: 30%;
+    ${Media.lg} {
+      margin-right: 70px;
     }
-    ${Media.sm} {
-      flex: 0 0 40%;
-      max-width: 40%;
+    ${Media.md} {
+      margin-right: 7px;
     }
   }
   .blog_content {
@@ -515,10 +516,7 @@ export const Companyblog = styled.div`
 
 export const Companylogo = styled.div`
   margin-left: 85px;
-  ${Media.md} {
-    margin-left: 60px;
-  }
-  ${Media.sm} {
+  ${Media.xl2} {
     margin-left: 0px;
   }
   img {
@@ -562,12 +560,16 @@ export const Borderline = styled.div`
   max-width: 1200px;
   margin-left: 97px;
   margin-right: auto;
+  ${Media.xl2} {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
   ${Media.md} {
     max-width: 850px;
-    margin: 89px auto;
+    margin: 89px 50px;
   }
   ${Media.sm} {
-    margin: 60px auto;
+    margin: 60px 30px;
   }
 `;
 
@@ -699,6 +701,10 @@ export const Slidersection = styled.div`
 
 export const Quotesection = styled.div`
   max-width: 1154px;
+  ${Media.md} {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
   ${Media.sm} {
     margin-left: 15px;
   }
@@ -718,6 +724,7 @@ export const Quotesection = styled.div`
     line-height: 68px;
     font-family: "visbycf", sans-serif;
     ${Media.md} {
+      font-size: 24px;
       line-height: 44px;
     }
     ${Media.sm} {
@@ -1420,6 +1427,9 @@ export const Customserviceslider = styled.div`
       clear: both;
       text-align: right;
       margin-right: 70px;
+      ${Media.md} {
+        margin-right: 35px;
+      }
       .nav-btn {
         background-repeat: no-repeat;
         width: 18px;
@@ -1494,6 +1504,11 @@ export const Customowlslide = styled.div`
     display: flex;
     align-items: center;
     gap: 56px;
+    ${Media.md} {
+      margin-top: 42px;
+      margin-left: 20px;
+      margin-bottom:50px;
+    }
     button {
       &:hover {
         background: transparent !important;
