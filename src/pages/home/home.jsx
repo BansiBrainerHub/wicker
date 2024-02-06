@@ -201,7 +201,7 @@ const Home = () => {
         <Teamsection>
           <Container>
             <Row style={{justifyContent:"center"}}>
-              <Column className="col-md-6 col-12">
+              <Column className="col-md-7 col-12">
                 <Row>
                   <Column className="w-50">
                     <Teamcard>

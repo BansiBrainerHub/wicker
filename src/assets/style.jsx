@@ -59,24 +59,20 @@ export const DBindingwrapper = styled.div`
   width: 325px;
   background: #000;
   border-radius:200px;
-  ${Media.ss} {
-    padding: 32px;
-    padding-top: 32px;
-  }
   ${Media.md} {
-    height: 200px;
+    right: -52px;
+    top: -112px;
   }
   ${Media.ss} {
-    height: 230px;
-    padding-top: 0px;
+    right: -120px;
+    justify-content: flex-start;
+    padding-left: 44px;
   }
   ${Media.xxs} {
-    padding: 24px;
-    padding-top: 4px;
-    padding-right: 0px;
-    height: 200px;
+    top: -150px;
+    right: -150px;
+    padding-left: 30px;
   }
-
   p {
     color: #fff;
     font-size: 25px;
@@ -99,19 +95,9 @@ export const DBindingwrapper = styled.div`
     position: relative;
     top: -13px;
     ${Media.md} {
-      height: 20px;
-      position: absolute;
-      right: 40px;
-      bottom: 76px;
       width: 25px;
-      top: unset;
-    }
-    ${Media.ss} {
-      bottom: 106px;
-    }
-    ${Media.xxs} {
-      right: 20px;
-      bottom: 83px;
+      top: 13px;
+      right: 40px;
     }
   }
   &:hover {
@@ -123,7 +109,11 @@ export const DBindingwrapper = styled.div`
 export const DBindingcontent = styled.div`
   max-width: 190px;
   ${Media.md} {
-    max-width: 150px;
+    display: flex;
+    align-items: center;
+  }
+  ${Media.ss} {
+    max-width: 160px;
   }
 `;
 
@@ -657,7 +647,7 @@ export const Teamcardcontent = styled.div`
 `;
 
 export const Teamdiscription = styled.div`
-  padding-left: 60px;
+  ${'' /* padding-left: 60px; */}
   max-width: 470px;
   width: 100%;
   ${Media.md} {
@@ -905,7 +895,7 @@ export const Footersection = styled.div`
 `;
 
 export const Footerinfo = styled.div`
-  margin-left: 30px;
+  ${'' /* margin-left: 30px; */}
   ${Media.lg} {
     margin-left: 0px;
   }
