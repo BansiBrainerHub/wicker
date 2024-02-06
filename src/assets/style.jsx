@@ -584,6 +584,10 @@ export const Borderline = styled.div`
 export const Teamsection = styled.div`
   margin-left:97px;
   margin-right:73px;
+  .w-50{
+    max-width: 358px;
+    width: 100%;
+  }
   ${Media.md} {
     margin-left: 50px;
     margin-right: 50px;
@@ -597,9 +601,9 @@ export const Teamsection = styled.div`
 export const TeamColumn = styled.div``;
 
 export const Teamcard = styled.div`
-  img {
+  ${'' /* img {
     width: 100%;
-  }
+  } */}
   ${Media.sm} {
     margin-bottom: 30px;
   }
@@ -613,7 +617,6 @@ export const Teamcardcontent = styled.div`
   }
   h4 {
     font-size: 20px;
-    margin-bottom: 8px;
     line-height: 47px;
     font-weight: 400;
     font-family: "visbycf", sans-serif;
@@ -655,6 +658,8 @@ export const Teamcardcontent = styled.div`
 
 export const Teamdiscription = styled.div`
   padding-left: 60px;
+  max-width: 470px;
+  width: 100%;
   ${Media.md} {
     padding-left: 0px;
     // margin-right:55px;
@@ -666,7 +671,7 @@ export const Teamdiscription = styled.div`
     margin-top: 50px;
   }
   p {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: 32px;
     font-family: "visbycf", sans-serif;
@@ -703,8 +708,7 @@ export const Slidersection = styled.div`
 `;
 
 export const Quotesection = styled.div`
-  max-width: 850px;
-  margin-left: 40px;
+  max-width: 1154px;
   ${Media.sm} {
     margin-left: 15px;
   }
@@ -719,9 +723,9 @@ export const Quotesection = styled.div`
   }
   p {
     color: #fff;
-    font-size: 24px;
+    font-size: 40px;
     display: inline;
-    line-height: 48px;
+    line-height: 68px;
     font-family: "visbycf", sans-serif;
     ${Media.md} {
       line-height: 44px;
@@ -1260,8 +1264,7 @@ export const Customaccordian = styled.div`
     }
   }
   .accordion__button {
-    padding-left: 0px;
-    padding-right: 25px;
+    padding:0px 25px 10px 0px;
     position: relative;
     font-size: 30px;
     line-height: 48px;
@@ -1282,7 +1285,7 @@ export const Customaccordian = styled.div`
       margin-right: 0px;
       right: 7px;
       z-index: 9;
-      top: 25px;
+      top: 15px;
       ${Media.md} {
         top: 14px;
       }
@@ -1296,7 +1299,7 @@ export const Customaccordian = styled.div`
       transform: rotate(90deg);
       position: absolute;
       right: 0px;
-      top: 32px;
+      top: 22px;
       z-index: 9;
       ${Media.md} {
         top: 22px;
@@ -1317,6 +1320,8 @@ export const Customaccordian = styled.div`
   }
   .accordion__item {
     border-bottom: 2px solid #111725;
+    margin-bottom:40px;
+    border-top:0px;
     ${Media.md} {
       padding-top: 30px;
     }
@@ -1494,8 +1499,8 @@ export const Customowlslide = styled.div`
   }
 
   .owl-nav {
-    margin-top: 50px;
-    margin-left: 40px;
+    margin-top: 80px;
+    margin-left: 90px;
     display: flex;
     align-items: center;
     gap: 56px;

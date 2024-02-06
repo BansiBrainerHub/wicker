@@ -200,10 +200,10 @@ const Home = () => {
         {/* company blog section end  */}
         <Teamsection>
           <Container>
-            <Row>
-              <Column className="col-md-7 col-12">
+            <Row style={{justifyContent:"center"}}>
+              <Column className="col-md-6 col-12">
                 <Row>
-                  <Column className="col-md-6 col-12 teaminnerColumn_01">
+                  <Column className="w-50">
                     <Teamcard>
                       <img src={Teamimg01} alt="team image" />
                       <Teamcardcontent>
@@ -223,7 +223,7 @@ const Home = () => {
                       </Teamcardcontent>
                     </Teamcard>
                   </Column>
-                  <Column className="col-md-6 col-12 teaminnerColumn_02">
+                  <Column className="w-50">
                     <Teamcard>
                       <img src={Teamimg02} alt="team image" />
                       <Teamcardcontent>
@@ -286,7 +286,7 @@ const Home = () => {
         </Teamsection>
         <Slidersection>
           <Container>
-            <Row>
+            <Row style={{justifyContent:"center"}}>
               <Column>
                 <Quotesection>
                   <img src={QuoteImg} />

@@ -16,12 +16,10 @@ import { Customowlslide } from "../assets/style";
 const OwlCarouselSlider = () => {
   const options = {
     loop: true,
-    center: false,
+    center: true,
     margin: 20,
     autoplay: true,
     dots: false,
-    // autoplayTimeout: 3000,
-    // smartSpeed: 450,
     singleItem: true,
     nav: true,
     navText: [
