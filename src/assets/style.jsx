@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 // images
 
 import BindingbtnImg from "../assets/images/bindingBtn.png";
@@ -20,9 +21,12 @@ export const Media = {
 };
 
 export const MainIndexpage = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 44px;
   ${Media.md} {
     overflow-x: hidden;
+  }
+  ${Media.sm}{
+    margin-bottom: 20px;
   }
 `;
 
@@ -490,6 +494,12 @@ export const Companyblog = styled.div`
     ${Media.md} {
       margin-right: 7px;
     }
+    ${Media.sm} {
+      margin-left: 50px;
+    }
+    ${Media.ss} {
+      margin-left: 0px;
+    }
   }
   .blog_content {
     flex: 0 0 60%;
@@ -570,13 +580,19 @@ export const Borderline = styled.div`
     margin: 89px 50px;
   }
   ${Media.sm} {
-    margin: 60px 30px;
+    margin: 60px 0px;
   }
 `;
 
 export const Teamsection = styled.div`
   margin-left:97px;
   margin-right:73px;
+  .col-md-7{
+    max-width:736px;
+  }
+  .col-md-5{
+    max-width:422px;
+  }
   .w-50{
     max-width: 358px;
     width: 100%;
@@ -778,12 +794,10 @@ export const Faqheader = styled.div`
     font-family: "visbycf", sans-serif;
     font-weight: 400;
     span {
-      font-family: "Helvetica", sans-serif;
-      font-weight: 300;
+      font-family: 'Montserrat', sans-serif;
     }
     ${Media.md} {
       font-size: 51px;
-      ${'' /* line-height: normal; */}
       margin-bottom: 20px;
     }
     ${Media.sm} {
@@ -1390,6 +1404,7 @@ export const Customserviceslider = styled.div`
     line-height: 24px;
     color: #bdbdbd;
     font-family: "visbycf", sans-serif;
+    max-width:416px;
     span {
       font-family: "Helvetica", sans-serif;
       font-weight: 400;

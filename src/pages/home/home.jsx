@@ -200,7 +200,7 @@ const Home = () => {
         {/* company blog section end  */}
         <Teamsection>
           <Container>
-            <Row style={{justifyContent:"center"}}>
+            <Row style={{justifyContent:"space-evenly"}}>
               <Column className="col-md-7 col-12">
                 <Row>
                   <Column className="w-50">
