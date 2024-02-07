@@ -37,7 +37,7 @@ const Footer = () => {
     <>
       <Footersection>
         <Customefooter>
-          <Column className="col-md-7 col-12">
+          <Column className="col-md-7 col-12 footer-left">
             <Footerinfo>
               <h2> Beratung anfragen </h2>
               <p>

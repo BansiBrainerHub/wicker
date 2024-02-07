@@ -29,9 +29,11 @@ const OwlCarouselSlider = () => {
     responsive: {
       0: {
         items: 1.5,
+        center: false,
       },
       600: {
         items: 2.5,
+        center: false,
       },
       1000: {
         items: 4.5,

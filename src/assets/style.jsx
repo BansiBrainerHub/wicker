@@ -303,11 +303,12 @@ export const Bannerleftcontent = styled.div`
     }
     ${Media.md} {
       font-size: 16px;
-      ${'' /* max-width: 180px; */}
+    }
+    ${Media.sm} {
+      max-width: 190px;
     }
     ${Media.xxs} {
       font-size: 16px;
-      max-width: 100%;
     }
     strong {
       ${Media.md} {
@@ -579,6 +580,9 @@ export const Teamsection = styled.div`
   .w-50{
     max-width: 358px;
     width: 100%;
+    ${Media.sm} {
+      max-width: 100%;
+    }
   }
   ${Media.md} {
     margin-left: 50px;
@@ -694,8 +698,7 @@ export const Slidersection = styled.div`
   }
   ${Media.sm} {
     padding-top: 100px;
-    padding-bottom: 220px;
-    margin-top: 80px;
+    margin-top: 20px;
   }
 `;
 
@@ -706,7 +709,8 @@ export const Quotesection = styled.div`
     margin-right: 35px;
   }
   ${Media.sm} {
-    margin-left: 15px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   img {
     display: inline;
@@ -745,7 +749,7 @@ export const Faqwrapper = styled.div`
   padding: 50px 60px;
   border-radius: 20px;
   ${Media.md} {
-    padding: 50px 60px 140px 60px;
+    padding: 65px 60px 140px 60px;
   }
   ${Media.sm} {
     padding: 36px 20px 80px;
@@ -779,7 +783,7 @@ export const Faqheader = styled.div`
     }
     ${Media.md} {
       font-size: 51px;
-      line-height: normal;
+      ${'' /* line-height: normal; */}
       margin-bottom: 20px;
     }
     ${Media.sm} {
@@ -803,9 +807,6 @@ export const Faqheader = styled.div`
   }
   :last-child {
     margin-bottom: 50px;
-    ${Media.md} {
-      margin-bottom: 0px;
-    }
   }
 `;
 
@@ -895,8 +896,6 @@ export const Footersection = styled.div`
   margin-left: 40px;
   margin-right: 40px;
   ${Media.sm} {
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: 40px;
   }
 `;
@@ -947,6 +946,11 @@ export const Customefooter = styled.div`
   display: flex;
   align-items: end;
   justify-content: space-between;
+  .footer-left{
+    ${Media.sm} {
+      max-width: 100%;
+    }
+  }
   ${Media.sm} {
     display: block;
   }
@@ -954,6 +958,12 @@ export const Customefooter = styled.div`
 export const Customrow = styled.div`
   display: flex;
   align-items: end;
+  .col-md-8{
+    ${Media.sm} {
+      flex: 0 0 100%;
+      max-width:100%;
+    }
+  }
   ${Media.sm} {
     flex-wrap: wrap;
   }
@@ -961,6 +971,11 @@ export const Customrow = styled.div`
 export const Customcolumn = styled.div`
   .customRow {
     flex-wrap: nowrap;
+    ${Media.sm} {
+      .col-sm-6 {
+        width: 50%;
+      }
+    }
     input {
       margin-bottom: 0;
     }
@@ -1068,6 +1083,9 @@ export const Submitbtn = styled.div`
     background: transparent;
     color: #1e2941;
     border: 1px solid #1e2941;
+  }
+  ${Media.md} {
+    font-size:19px;
   }
   ${Media.sm} {
     margin-left: 0px;
@@ -1226,7 +1244,8 @@ export const Fbcolumn3 = styled.div`
   cursor: pointer;
   p {
     display: flex;
-    gap: 5px;
+    align-items:center;
+    gap: 10px;
   }
   ${Media.md} {
     p {
@@ -1256,6 +1275,9 @@ export const Customaccordian = styled.div`
       font-size: 20px;
       font-weight: 200;
       ${Media.md} {
+        font-size: 16px;
+      }
+      ${Media.sm} {
         font-size: 11px;
       }
     }
@@ -1284,7 +1306,7 @@ export const Customaccordian = styled.div`
       z-index: 9;
       top: 15px;
       ${Media.md} {
-        top: 14px;
+        top: -5px;
       }
     }
     &:after {
@@ -1299,7 +1321,7 @@ export const Customaccordian = styled.div`
       top: 22px;
       z-index: 9;
       ${Media.md} {
-        top: 22px;
+        top: 3px;
       }
     }
     ${Media.md} {
@@ -1308,7 +1330,6 @@ export const Customaccordian = styled.div`
     }
     ${Media.sm} {
       font-size: 12px;
-      padding-top: 24px;
       padding-bottom: 24px;
     }
   }
@@ -1324,6 +1345,7 @@ export const Customaccordian = styled.div`
     }
     ${Media.sm} {
       padding-top: 0px;
+      margin-bottom:25px;
     }
   }
   .accordion__button[aria-expanded="true"],
