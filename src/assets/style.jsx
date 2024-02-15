@@ -82,7 +82,7 @@ export const DBindingwrapper = styled.div`
     color: #fff;
     font-size: 25px;
     font-weight: 300;
-    font-family: 'visbycf';
+    font-family: 'Visby CF';
     span {
       font-family: "Helvetica", sans-serif;
       font {
@@ -183,14 +183,14 @@ export const Bannerheading = styled.div`
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     letter-spacing: -2.2px;
     max-width: 80%;
     margin: 0px auto;
     span {
       ${Media.md} {
-        font-family: system-ui;
-        font-weight: 400;
+        font-family: 'Open Sans';
+        font-weight: 500;
       }
     }
     ${Media.xl} {
@@ -297,9 +297,14 @@ export const Bannerleftcontent = styled.div`
 
   p {
     font-size: 20px;
-    font-family: "visbycf", sans-serif;
+    line-height:27px;
+    font-family: 'Visby CF';
     span {
-      font-family: "Helvetica", sans-serif;
+      font-family: 'Montserrat';
+      ${Media.md} {
+        font-family: 'Helvetica';
+        font-weight: 400;
+      }
     }
     ${Media.lg} {
       font-size: 18px;
@@ -327,7 +332,8 @@ export const Bannerrightcontent = styled.div`
   margin-left: 70px;
   p {
     font-size: 20px;
-    font-family: "visbycf", sans-serif;
+    line-height:27px;
+    font-family: 'Visby CF';
     ${Media.lg} {
       font-size: 18px;
     }
@@ -388,7 +394,7 @@ export const Aboutheading = styled.div`
     font-size: 64px;
     font-weight: 400;
     margin-bottom: 30px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
   }
   p {
     font-size: 23px;
@@ -396,9 +402,15 @@ export const Aboutheading = styled.div`
     color: #828282;
     font-weight: 400;
     margin-bottom: 40px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     span {
-      font-family: "Helvetica", sans-serif;
+      &.spec-char{
+        font-family: 'Montserrat';
+      }
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
     }
     ${Media.md} {
       font-size: 16px;
@@ -417,7 +429,7 @@ export const Aboutheading = styled.div`
     line-height: 50px;
     width: 100%;
     text-align: center;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     transition: 0.4s all ease-in-out;
     &:hover {
       background-color: transparent;
@@ -438,7 +450,8 @@ export const Innovationcontent = styled.div`
     font-size: 40px;
     color: #fff;
     margin-bottom: 5px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
+    font-weight:300;
     ${Media.lg} {
       font-size: 30px;
     }
@@ -451,10 +464,20 @@ export const Innovationcontent = styled.div`
     font-weight: 600;
     color: #fff;
     margin-bottom: 40px;
-    font-family: "visbycf", sans-serif;
-    span {
-      font-family: "Helvetica", sans-serif;
-      font-weight: 500;
+    font-family: 'Visby CF';
+    span.spec-char {
+      font-family: 'Montserrat';
+      font-weight: 600;
+      ${Media.md} {
+        font-family: 'Helvetica';
+        font-weight: 600;
+      }
+    }
+    span{
+      ${Media.md} {
+        font-family: 'Helvetica';
+        font-weight: 600;
+      }
     }
     ${Media.lg} {
       font-size: 30px;
@@ -474,7 +497,7 @@ export const Innovationcontent = styled.div`
     line-height: 50px;
     width: 100%;
     text-align: center;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     transition: 0.4s all ease-in-out;
     &:hover {
       background-color: #111725;
@@ -549,8 +572,9 @@ export const Copanyblogcontent = styled.div`
 
   p {
     font-size: 25px;
+    line-height:34px;
     color: #111725;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
 
     ${Media.md} {
       font-size: 18px;
@@ -559,6 +583,12 @@ export const Copanyblogcontent = styled.div`
     ${Media.sm} {
       font-size: 13px;
       line-height: 20px;
+    }
+    span{
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight:500;
+      }
     }
   }
   p:first-child {
@@ -631,16 +661,21 @@ export const Teamcardcontent = styled.div`
     font-size: 20px;
     line-height: 47px;
     font-weight: 400;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     ${Media.md} {
       font-size: 16px;
+    }
+    span{
+      ${Media.md} {
+        font-weight:500;
+      }
     }
   }
   h3 {
     font-size: 40px;
     line-height: 47px;
     margin-bottom: 8px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     font-weight: 400;
     ${Media.md} {
       font-size: 24px;
@@ -652,10 +687,16 @@ export const Teamcardcontent = styled.div`
   p {
     font-size: 16px;
     line-height: 24px;
-    font-family: "visbycf", sans-serif;
-    span {
-      font-family: "Helvetica", sans-serif;
+    font-family: 'Visby CF';
+    span.spec-char {
+      font-family: 'Montserrat';
       font-weight: 400;
+    }
+    span{
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
     }
     ${Media.md} {
       font-size: 12px;
@@ -686,9 +727,12 @@ export const Teamdiscription = styled.div`
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 32px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     span {
-      font-family: "Helvetica", sans-serif;
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
     }
     ${Media.md} {
       font-size: 12px;
@@ -742,7 +786,14 @@ export const Quotesection = styled.div`
     font-size: 40px;
     display: inline;
     line-height: 68px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
+
+    span{
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
+    }
     ${Media.md} {
       font-size: 24px;
       line-height: 44px;
@@ -762,13 +813,13 @@ export const Faqwrapper = styled.div`
   position: relative;
   margin-top: -130px;
   background: #fff;
-  padding: 50px 60px;
+  padding: 58px 60px 30px 60px;
   border-radius: 20px;
   ${Media.md} {
-    padding: 65px 60px 140px 60px;
+    padding: 65px 60px 80px 60px;
   }
   ${Media.sm} {
-    padding: 36px 20px 80px;
+    padding: 50px 20px 70px;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -790,18 +841,25 @@ export const Faqheader = styled.div`
   z-index: 9;
   h2 {
     font-size: 64px;
-    line-height: 98px;
-    font-family: "visbycf", sans-serif;
+    line-height: 70px;
+    margin-bottom:30px;
+    font-family: 'Visby CF';
     font-weight: 400;
     span {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat";
+      ${Media.md} {
+        font-family: 'Helvetica';
+        font-weight: 500;
+      }
     }
     ${Media.md} {
       font-size: 51px;
-      margin-bottom: 20px;
+      line-height:60px;
+      margin-bottom: 25px;
     }
     ${Media.sm} {
       font-size: 28px;
+      line-height:34px;
     }
   }
   p {
@@ -809,7 +867,7 @@ export const Faqheader = styled.div`
     line-height: 29px;
     margin-bottom: 15px;
     color: #828282;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     ${Media.md} {
       font-size: 16px;
       line-height: 22px;
@@ -818,9 +876,21 @@ export const Faqheader = styled.div`
       font-size: 11px;
       line-height: 14px;
     }
+    span{
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
+    }
   }
   :last-child {
     margin-bottom: 50px;
+    ${Media.md} {
+      margin-bottom:25px;
+    }
+    ${Media.sm} {
+      margin-bottom:35px;
+    }
   }
 `;
 
@@ -851,7 +921,7 @@ export const Bindingwrapper = styled.div`
     color: #fff;
     font-size: 25px;
     line-height: 35px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     span {
       font-family: "Helvetica", sans-serif;
       font {
@@ -923,7 +993,7 @@ export const Footerinfo = styled.div`
     font-size: 30px;
     line-height: 24px;
     margin-bottom: 22px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     font-weight: 600;
     ${Media.md} {
       font-size: 24px;
@@ -943,7 +1013,7 @@ export const Footerinfo = styled.div`
     line-height: 24px;
     margin-bottom: 25px;
     color: #828282;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     span {
       font-family: "Helvetica", sans-serif;
     }
@@ -996,6 +1066,11 @@ export const Customcolumn = styled.div`
     .col-md-6 {
       width: 50%;
     }
+    .col-sm-6:nth-child(2) {
+      ${Media.md} {
+        padding-left:0px;
+      }
+    }
   }
 `;
 export const Footermenu = styled.div`
@@ -1021,6 +1096,9 @@ export const Quicklinks = styled.div`
   ${Media.lg} {
     max-width: 120px;
   }
+  ${Media.md} {
+    max-width: 90px;
+  }
   ul {
     padding: 0px;
     margin: 0px;
@@ -1030,7 +1108,7 @@ export const Quicklinks = styled.div`
       font-size: 17px;
       font-weight: 600;
       margin-bottom: 16px;
-      font-family: "visbycf", sans-serif;
+      font-family: 'Visby CF';
       ${Media.md} {
         font-size: 14px;
         font-weight: 400;
@@ -1053,12 +1131,12 @@ export const InoutField = styled.div`
     width: 100%;
     border-radius: 10px;
     border: 1px solid #d7d7d7;
-    padding: 12px;
+    padding: 15px 12px 12px 12px;
     height: 54px;
     font-size: 19px;
     outline: 1px solid #d7d7d7;
     color: #111725;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     ${Media.sm} {
       margin-bottom: 10px;
       font-size: 14px;
@@ -1066,7 +1144,7 @@ export const InoutField = styled.div`
   }
   ::placeholder {
     color: #b8b8b8;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
   }
   &.mt-30 {
     ${Media.sm} {
@@ -1090,9 +1168,11 @@ export const Submitbtn = styled.div`
   text-align: center;
   line-height: 52px;
   cursor: pointer;
-  font-family: "open-sans", sans-serif;
+  font-family: "Open Sans";
+  font-weight:400;
   transition: 0.4s all ease-in-out;
   border: 1px solid #1e2941;
+  padding:0px 12px;
   &:hover {
     background: transparent;
     color: #1e2941;
@@ -1100,6 +1180,7 @@ export const Submitbtn = styled.div`
   }
   ${Media.md} {
     font-size:19px;
+    margin-left:10px;
   }
   ${Media.sm} {
     margin-left: 0px;
@@ -1115,13 +1196,14 @@ export const Checkbox = styled.div`
     margin-bottom: 12px;
     cursor: pointer;
     font-size: 14px;
+    line-height:20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
     margin-top: 30px;
     color: #8e8e8e;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     ${Media.xs} {
       font-size: 12px;
     }
@@ -1137,8 +1219,8 @@ export const Checkbox = styled.div`
 
   .checkmark {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 4px;
+    // transform: translateY(-50%);
     left: 0;
     height: 12px;
     width: 12px;
@@ -1175,10 +1257,11 @@ export const Fotterbottom = styled.div`
   p {
     font-size: 17px;
     font-weight: 600;
-    font-family: "visbycf", sans-serif;
-    span {
-      font-family: "Helvetica", sans-serif;
-      font-weight: 500;
+    font-family: 'Visby CF';
+
+    svg{
+      position: relative;
+      top: -2px;
     }
     ${Media.md} {
       font-size: 14px;
@@ -1196,18 +1279,22 @@ export const Ftcontactseciton = styled.div`
     font-size: 17px;
     margin-bottom: 25px;
     font-weight: 600;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     ${Media.md} {
       font-size: 14px;
-      font-family: "visbycfmedium", sans-serif;
     }
     span {
-      font-family: "Helvetica", sans-serif;
+      font-family: "Montserrat";
       font-weight: 600;
     }
   }
   p {
     margin-bottom: 5px;
+    font-family: 'Visby CF';
+    font-weight: 400;
+    ${Media.sm} {
+      font-size:14px;
+    }
   }
   img {
     width: 28px;
@@ -1237,7 +1324,7 @@ export const Footerrow = styled.div`
 export const Fbcolumn1 = styled.div`
   ${Media.md} {
     p {
-      font-family: "visbycfmedium", sans-serif;
+      font-family: 'Visby CF';
       font-weight: 600;
       font-size: 14px;
     }
@@ -1251,6 +1338,8 @@ export const Fbcolumn2 = styled.div`
   p {
     ${Media.md} {
       font-size: 11px;
+      font-family: "Roboto";
+      font-weight:400;
     }
   }
 `;
@@ -1260,10 +1349,14 @@ export const Fbcolumn3 = styled.div`
     display: flex;
     align-items:center;
     gap: 10px;
+    svg{
+       position:relative;
+       top:-2px;
+    }
   }
   ${Media.md} {
     p {
-      font-family: "visbycfmedium", sans-serif;
+      font-family: 'Visby CF';
       font-weight: 600;
       font-size: 14px;
     }
@@ -1288,6 +1381,8 @@ export const Customaccordian = styled.div`
       color: #000;
       font-size: 20px;
       font-weight: 200;
+      font-family: "Montserrat";
+      font-weight:300;
       ${Media.md} {
         font-size: 16px;
       }
@@ -1301,7 +1396,7 @@ export const Customaccordian = styled.div`
     position: relative;
     font-size: 30px;
     line-height: 48px;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     background-color: transparent;
     &:hover {
       background-color: transparent;
@@ -1386,28 +1481,31 @@ export const Customserviceslider = styled.div`
   h5 {
     font-size: 31px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 34px;
     margin-bottom: 27px;
     margin-top: 24px;
     color: #bdbdbd;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     span {
-      font-family: "Helvetica", sans-serif;
-      font-weight: 400;
+      font-family: 'Montserrat';
+      font-weight: 500;
     }
     ${Media.md} {
       font-size: 24px;
+      line-height:28px;
     }
   }
   p {
     font-size: 18px;
     line-height: 24px;
     color: #bdbdbd;
-    font-family: "visbycf", sans-serif;
+    font-family: 'Visby CF';
     max-width:416px;
     span {
-      font-family: "Helvetica", sans-serif;
-      font-weight: 400;
+      ${Media.md} {
+        font-family: 'Montserrat';
+        font-weight: 500;
+      }
     }
     ${Media.md} {
       font-size: 14px;
@@ -1598,7 +1696,7 @@ export const Customowlslide = styled.div`
       font-size: 28px;
       line-height: 57px;
       font-weight: 400;
-      font-family: "Helvetica", sans-serif;
+      font-family: "Helvetica";
       ${Media.md} {
         font-size: 20px;
       }
@@ -1607,7 +1705,7 @@ export const Customowlslide = styled.div`
       color: #fff;
       font-size: 20px;
       line-height: 27px;
-      font-family: "HelveticaNeue", sans-serif;
+      font-family: "HelveticaNeue";
       color: #fff;
       ${Media.md} {
         font-size: 16px;
@@ -1666,13 +1764,14 @@ export const Customemodalgroup = styled.div`
     border: 1px solid #d9d9d9;
     border-radius: 5px;
     height: 50px;
-    padding: 0px 15px;
+    padding: 9px 15px 5px 15px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -1px;
-    font-family: "visbycfmedium";
+    font-family: 'Visby CF';
+    font-weight:500;
     &::placeholder {
       color: rgb(0 0 0 / 50%);
     }
@@ -1682,13 +1781,30 @@ export const Customemodalgroup = styled.div`
     border: 1px solid #d9d9d9 !important;
     border-radius: 5px;
     height: 50px !important;
-    padding: 0px 15px;
+    padding: 9px 15px 5px 15px;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -1px;
+    color: rgb(0 0 0 / 50%);
+    font-family: 'Visby CF';
+    font-weight:500;
+    input{
+      font-size:20px;
+      margin-left:0px;
+    
+    &::placeholder{
+      text-transform:uppercase;
+      color: rgb(0 0 0 / 50%);
+      font-family: 'Visby CF';
+      font-weight: 500;
+    }
+  }
     &::placeholder {
       color: rgb(0 0 0 / 50%);
+      font-family: 'Visby CF';
+      font-weight:500;
+      
     }
     span {
       text-transform: capitalize;
@@ -1705,7 +1821,9 @@ export const Customemodalgroup = styled.div`
     text-transform: uppercase;
     color: rgb(0 0 0 / 50%);
     letter-spacing: -1px;
-    font-family: "visbycfmedium";
+    font-family: 'Visby CF';
+    font-weight:500;
+    padding-left:16px;
     span {
       margin-right: 46px;
       cursor: pointer;
@@ -1725,16 +1843,20 @@ export const Customemodalgroup1 = styled.div`
     border: 1px solid #d9d9d9;
     border-radius: 5px;
     height: 50px;
-    padding: 0px 15px;
+    padding: 9px 15px 5px 15px;
     box-sizing: border-box;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: -1px;
-    font-family: "visbycfmedium";
+    font-family: 'Visby CF';
+    font-weight:500;
     &::placeholder {
       color: rgb(0 0 0 / 50%);
+      font-family: 'Visby CF';
+      font-weight:500;
     }
+    
   }
   .text_control {
     width: 100%;
@@ -1746,10 +1868,14 @@ export const Customemodalgroup1 = styled.div`
     text-transform: uppercase;
     letter-spacing: -1px;
     border-radius: 5px;
-    font-family: "visbycfmedium";
+    font-family: 'Visby CF';
+    font-weight:500;
     resize: vertical;
+   
     &::placeholder {
       color: rgb(0 0 0 / 50%);
+      font-family: 'Visby CF';
+      font-weight:500;
     }
   }
   .modalcheckbox {
@@ -1772,6 +1898,7 @@ export const Customemodalgroup1 = styled.div`
     margin-bottom: 0px;
     color: #000;
     font-size: 10px;
+    line-height:12px;
     padding-left: 30px;
     .checkmark:after {
       left: 5px;
@@ -1798,5 +1925,5 @@ export const Modalbtn = styled.div`
   line-height: normal;
   padding: 16px 10px;
   cursor: pointer;
-  font-family: "open-sans", sans-serif;
+  font-family: "Open Sans";
 `;

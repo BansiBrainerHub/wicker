@@ -39,8 +39,8 @@ const serviceowlslider = () => {
           <div className="">
             <h5> ANALYSE</h5>
             <p>
-              In der ersten Phase führen wir eine umfassende Bedarfsanalyse
-              durch, um die individuellen Wünsche und Ziele zu definieren.
+              In der ersten Phase f<span>ü</span>hren wir eine umfassende Bedarfsanalyse
+              durch, um die individuellen W<span>ü</span>nsche und Ziele zu definieren.
             </p>
           </div>
         </div>
@@ -49,10 +49,10 @@ const serviceowlslider = () => {
           <div className="">
             <h5>
               {" "}
-              PLANUNG <span> & </span> KONZIPIERUNG
+              PLANUNG & KONZIPIERUNG
             </h5>
             <p>
-              Durch die sorgfältige Datenaufnahme ermitteln wir den IST
+              Durch die sorgf<span>ä</span>ltige Datenaufnahme ermitteln wir den IST
               <span>-</span>Zustand und identifizieren die spezifischen
               Anforderungen.
             </p>
@@ -73,9 +73,9 @@ const serviceowlslider = () => {
           <div className="">
             <h5> UMSETZUNG </h5>
             <p>
-              Wicker <span> & </span> Partner übernimmt die administrative
-              Koordination des gesamten Prozesses, einschließlich Finanzierung
-              und Notartermin für einen reibungslosen Ablauf.
+              Wicker <span> & </span> Partner <span>ü</span>bernimmt die administrative
+              Koordination des gesamten Prozesses, einschlie<span>ß</span>lich Finanzierung
+              und Notartermin f<span>ü</span>r einen reibungslosen Ablauf.
             </p>
           </div>
         </div>

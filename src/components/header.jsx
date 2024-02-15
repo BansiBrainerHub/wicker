@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ContactModal from "./contactmodal.jsx";
 // images
-import LogoImg from "../assets/images/logo.png";
+import LogoImg from "../assets/images/logo.svg";
 import Rightarrow from "../assets/images/right_arrowBtn.png";
 
 // styles

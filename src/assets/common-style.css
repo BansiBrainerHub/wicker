@@ -3,39 +3,22 @@
   margin: 0px;
   box-sizing: border-box;
 }
+
 body {
   overflow-x: hidden;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
   font-family: Helvetica;
   src: url(../assets/fonts/Helvetica.ttf);
 
-  font-family: HelveticaNeue;
+  font-family: 'HelveticaNeue';
   src: url(../assets/fonts/HelveticaNeueRegular.otf);
 
-  font-family: visbycfmedium;
-  font-weight: 500;
-  src: url(../assets/fonts/visbycf-medium.otf);
-
-  font-family: visbycf;
-  font-weight: 400;
-  src: url(../assets/fonts/visbycf-regular.otf);
-}
-
-@font-face {
-  font-family: 'visbycf';
-  src: url('../assets/fonts/FONTSPRINGDEMO-VisbyCFRegular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'visbycfmedium';
-  src: url('../assets/fonts/FONTSPRINGDEMO-VisbyCFMediumRegular.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
@@ -54,6 +37,129 @@ body {
   font-display: swap;
 }
 
+/***Add fonts ****/
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyCF-DemiBold.eot');
+  src: url('../assets/fonts/VisbyCF-DemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCF-DemiBold.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCF-DemiBold.woff') format('woff'),
+      url('../assets/fonts/VisbyCF-DemiBold.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCF-DemiBold.svg#VisbyCF-DemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyCFRegular.eot');
+  src: url('../assets/fonts/VisbyCFRegular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCFRegular.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCFRegular.woff') format('woff'),
+      url('../assets/fonts/VisbyCFRegular.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCFRegular.svg#FONTSPRINGDEMO-VisbyCFRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyCF-Bold.eot');
+  src: url('../assets/fonts/VisbyCF-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCF-Bold.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCF-Bold.woff') format('woff'),
+      url('../assets/fonts/VisbyCF-Bold.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCF-Bold.svg#VisbyCF-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyCF-Light.eot');
+  src: url('../assets/fonts/VisbyCF-Light.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCF-Light.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCF-Light.woff') format('woff'),
+      url('../assets/fonts/VisbyCF-Light.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCF-Light.svg#VisbyCF-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF Extra';
+  src: url('../assets/fonts/VisbyCF-ExtraBold.eot');
+  src: url('../assets/fonts/VisbyCF-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCF-ExtraBold.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCF-ExtraBold.woff') format('woff'),
+      url('../assets/fonts/VisbyCF-ExtraBold.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCF-ExtraBold.svg#VisbyCF-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyCF-Heavy.eot');
+  src: url('../assets/fonts/VisbyCF-Heavy.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCF-Heavy.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCF-Heavy.woff') format('woff'),
+      url('../assets/fonts/VisbyCF-Heavy.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCF-Heavy.svg#VisbyCF-Heavy') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyCFMediumRegular.eot');
+  src: url('../assets/fonts/VisbyCFMediumRegular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyCFMediumRegular.woff2') format('woff2'),
+      url('../assets/fonts/VisbyCFMediumRegular.woff') format('woff'),
+      url('../assets/fonts/VisbyCFMediumRegular.ttf') format('truetype'),
+      url('../assets/fonts/VisbyCFMediumRegular.svg#VisbyCFMediumRegular') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyRegular.eot');
+  src: url('../assets/fonts/VisbyRegular.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyRegular.woff2') format('woff2'),
+      url('../assets/fonts/VisbyRegular.woff') format('woff'),
+      url('../assets/fonts/VisbyRegular.ttf') format('truetype'),
+      url('../assets/fonts/VisbyRegular.svg#VisbyRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Visby CF';
+  src: url('../assets/fonts/VisbyMedium.eot');
+  src: url('../assets/fonts/VisbyMedium.eot?#iefix') format('embedded-opentype'),
+      url('../assets/fonts/VisbyMedium.woff2') format('woff2'),
+      url('../assets/fonts/VisbyMedium.woff') format('woff'),
+      url('../assets/fonts/VisbyMedium.ttf') format('truetype'),
+      url('../assets/fonts/VisbyMedium.svg#VisbyMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+/***Add fonts ****/
 h1,
 h2,
 h3,

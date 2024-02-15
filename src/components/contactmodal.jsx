@@ -82,7 +82,7 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                   className="text_control"
                   rows="5"
                   cols="50"
-                  placeholder="Nachricht Hier können Sie uns zusätzliche Anliegen schildern oder Fragen stellen."
+                  placeholder="Nachricht"
                 ></textarea>
               </Customemodalgroup1>
             </Customemodalrow>

@@ -44,7 +44,7 @@ import {
 
 // images
 import headerbnnerImg from "../../assets/images/topBanner-img.png";
-import logoimage from "../../assets/images/wpi2.png";
+import logoimage from "../../assets/images/wpi2.svg";
 import Teamimg01 from "../../assets/images/team-img-01.png";
 import Teamimg02 from "../../assets/images/team-img-02.png";
 import QuoteImg from "../../assets/images/quoteImg.png";
@@ -128,11 +128,11 @@ const Home = () => {
                   <h3> Ablauf </h3>
                   <p>
                     Mit mehr als 50 Jahren Erfahrung im Aufbau von
-                    Privatvermögen durch Immobilien, bietet der familiäre
-                    Betrieb Wicker <span>&</span> Partner individuelle Lösungen.
+                    Privatverm<span>ö</span>gen durch Immobilien, bietet der famili<span>ä</span>re
+                    Betrieb Wicker <span className="spec-char">&</span> Partner individuelle L<span>ö</span>sungen.
                   </p>
                   <p>
-                    Nach einer gründlichen Finanzanalyse erfolgt die Auswahl der
+                    Nach einer gr<span>ü</span>ndlichen Finanzanalyse erfolgt die Auswahl der
                     Objekte und eine umfassende Risikobewertung.
                   </p>
                   <p>
@@ -155,9 +155,9 @@ const Home = () => {
             <Innovationcontent>
               <p> Tradition trifft Innovation </p>
               <h3>
-                Wicker <span> & </span> Partner <span> - </span> Ihr Weg zum
-                nachhaltigen Vermögensaufbau durch intelligente und individuelle
-                Immobilienlösungen.
+                Wicker <span className="spec-char"> & </span> Partner - Ihr Weg zum
+                nachhaltigen Verm<span>ö</span>gensaufbau durch intelligente und individuelle
+                Immobilienl<span>ö</span>sungen.
               </h3>
               <a href="#"> Beratung </a>
             </Innovationcontent>
@@ -176,14 +176,14 @@ const Home = () => {
               <Column className="blog_content">
                 <Copanyblogcontent>
                   <p>
-                    In einer Welt, die ständigen Veränderungen unterworfen ist,
-                    bleiben wir unserer Tradition treu, während wir gleichzeitig
+                    In einer Welt, die st<span>ä</span>ndigen Ver<span>ä</span>nderungen unterworfen ist,
+                    bleiben wir unserer Tradition treu, w<span>ä</span>hrend wir gleichzeitig
                     innovativ auf neue Herausforderungen reagieren.
                   </p>
                   <p>
-                    Mit einem klaren Blick für Chancen und einem festen
-                    Engagement für Qualität setzen wir Maßstäbe im Aufbau von
-                    Privatvermögen durch Immobilieninvestitionen.
+                    Mit einem klaren Blick f<span>ü</span>r Chancen und einem festen
+                    Engagement f<span>ü</span>r Qualit<span>ä</span>t setzen wir Ma<span>ß</span>st<span>ä</span>be im Aufbau von
+                    Privatverm<span>ö</span>gen durch Immobilieninvestitionen.
                   </p>
                 </Copanyblogcontent>
               </Column>
@@ -207,18 +207,18 @@ const Home = () => {
                     <Teamcard>
                       <img src={Teamimg01} alt="team image" />
                       <Teamcardcontent>
-                        <h4> GESCHÄFTSFÜHRER </h4>
+                        <h4> GESCH<span>Ä</span>FTSF<span>Ü</span>HRER </h4>
                         <h3> Raphael Wicker </h3>
                         <p>
-                          Raphael Wicker, unser geschäftsführender Partner der
+                          Raphael Wicker, unser gesch<span>ä</span>ftsf<span>ü</span>hrender Partner der
                           zweiten Generation, Master in Immobilienwirtschaft.
                         </p>
                         <p>
                           Seine fundierte Expertise und innovative
-                          Herangehensweise prägen maßgeblich den Erfolg von
-                          Wicker <span>&</span> Partner im nachhaltigen Aufbau
-                          von Privatvermögen durch intelligente
-                          Immobilienlösungen.
+                          Herangehensweise pr<span>ä</span>gen maßgeblich den Erfolg von
+                          Wicker <span className="spec-char">&</span> Partner im nachhaltigen Aufbau
+                          von Privatverm<span>ö</span>gen durch intelligente
+                          Immobilienl<span>ö</span>sungen.
                         </p>
                       </Teamcardcontent>
                     </Teamcard>
@@ -230,12 +230,12 @@ const Home = () => {
                         <h4> LEITUNG NORD </h4>
                         <h3> Nele Engfer </h3>
                         <p>
-                          Nele Engfer verkörpert das Herzstück unserer
-                          Unternehmensphilosophie: Professionalität, Integrität
-                          und eine unerschütterliche Hingabe für Ihre
+                          Nele Engfer verk<span>ö</span>rpert das Herzst<span>ü</span>ck unserer
+                          Unternehmensphilosophie: Professionalit<span>ä</span>t, Integrit<span>ä</span>t
+                          und eine unersch<span>ü</span>tterliche Hingabe f<span>ü</span>r Ihre
                           finanziellen Ziele. Mit jahrelanger Erfahrung im
-                          Bereich Kapitalanlagen und einem tiefen Verständnis
-                          für den Immobilienmarkt leitet Nele das Team Nord mit
+                          Bereich Kapitalanlagen und einem tiefen Verst<span>ä</span>ndnis
+                          f<span>ü</span>r den Immobilienmarkt leitet Nele das Team Nord mit
                           einer beeindruckenden Vision und einem unfehlbaren
                           Engagement.
                         </p>
@@ -247,36 +247,36 @@ const Home = () => {
               <Column className="col-md-5 col-12">
                 <Teamdiscription>
                   <p>
-                    Wicker <span> & </span> Partner, als familiäres Unternehmen
+                    Wicker <span> & </span> Partner, als famili<span>ä</span>res Unternehmen
                     mit mehr als zwei Generationen Erfahrung im Aufbau von
-                    Privatvermögen durch Immobilien, bieten wir unseren Kunden
-                    umfassende Lösungen.
+                    Privatverm<span>ö</span>gen durch Immobilien, bieten wir unseren Kunden
+                    umfassende L<span>ö</span>sungen.
                   </p>
                   <p>
-                    Unser tiefes Verständnis für den Immobilienmarkt und unsere
-                    langfristige Vision für Erfolg ermöglichen es uns, gemeinsam
+                    Unser tiefes Verst<span>ä</span>ndnis f<span>ü</span>r den Immobilienmarkt und unsere
+                    langfristige Vision f<span>ü</span>r Erfolg erm<span>ö</span>glichen es uns, gemeinsam
                     mit unseren Kunden maßgeschneiderte Strategien zu
                     entwickeln.
                   </p>
                   <p>
-                    Wir legen großen Wert auf persönliche Betreuung und setzen
-                    dabei höchsten Fokus auf Transparenz und Integrität. Unsere
-                    Expertise erstreckt sich über sämtliche Facetten der
+                    Wir legen gro<span>ß</span>en Wert auf pers<span>ö</span>nliche Betreuung und setzen
+                    dabei h<span>ö</span>chsten Fokus auf Transparenz und Integrit<span>ä</span>t. Unsere
+                    Expertise erstreckt sich <span>ü</span>ber s<span>ä</span>mtliche Facetten der
                     Immobilienbranche von der Auswahl vielversprechender
-                    Investitionsobjekte über die effektive Verwaltung von
+                    Investitionsobjekte <span>ü</span>ber die effektive Verwaltung von
                     Bestandsimmobilien bis hin zur Entwicklung zukunftsweisender
                     Projekte.
                   </p>
                   <p>
-                    Durch unsere ganzheitlichen Lösungsansätze schaffen wir
+                    Durch unsere ganzheitlichen L<span>ö</span>sungsans<span>ä</span>tze schaffen wir
                     nicht nur Werte, sondern bauen auch nachhaltige
-                    Vermögensportfolios auf.
+                    Verm<span>ö</span>gensportfolios auf.
                   </p>
                   <p>
-                    Unsere familiäre Prägung spiegelt sich in einem engen
+                    Unsere famili<span>ä</span>re Pr<span>ä</span>gung spiegelt sich in einem engen
                     Zusammenhalt und einer starken Kundenbindung wider. Die
-                    Werte, die über Generationen hinweg gepflegt wurden,
-                    manifestieren sich in unserem ethischen Geschäftsansatz und
+                    Werte, die <span>ü</span>ber Generationen hinweg gepflegt wurden,
+                    manifestieren sich in unserem ethischen Gesch<span>ä</span>ftsansatz und
                     unserem Streben nach Exzellenz.
                   </p>
                 </Teamdiscription>
@@ -291,10 +291,10 @@ const Home = () => {
                 <Quotesection>
                   <img src={QuoteImg} />
                   <p>
-                    Durch die präzise Auswahl vielversprechender
+                    Durch die pr<span>ä</span>zise Auswahl vielversprechender
                     Investitionsobjekte und eine durchdachte Umsetzung haben wir
                     nicht nur Werte geschaffen, sondern auch den Erfolg unserer
-                    Mandanten maßgeblich beeinflusst.{" "}
+                    Mandanten ma<span>ß</span>geblich beeinflusst.{" "}
                   </p>
                 </Quotesection>
               </Column>
@@ -309,13 +309,13 @@ const Home = () => {
             </h2>
             <p>
               Unser Team von Experten arbeitet kontinuierlich daran, innovative
-              Lösungen zu finden und die Erwartungen unserer Mandanten zu
-              übertreffen. Unsere Erfolge sind das Ergebnis einer engen
+              L<span>ö</span>sungen zu finden und die Erwartungen unserer Mandanten zu
+              <span>ü</span>bertreffen. Unsere Erfolge sind das Ergebnis einer engen
               Zusammenarbeit mit unseren Mandanten, transparenten Kommunikation
-              und dem Streben nach höchster Qualität in jedem Schritt des
+              und dem Streben nach h<span>ö</span>chster Qualit<span>ä</span>t in jedem Schritt des
               Projektzyklus.
             </p>
-            <p>Diese Fragen beschäftigen unsere Mandanten:</p>
+            <p>Diese Fragen besch<span>ä</span>ftigen unsere Mandanten:</p>
           </Faqheader>
           <Faqaccordian />
         </Faqwrapper>
