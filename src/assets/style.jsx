@@ -1829,7 +1829,39 @@ export const Customemodalgroup = styled.div`
     font-family: 'Visby CF';
     font-weight:500;
     padding-left:16px;
-    span {
+    position:relative;
+
+    .custom-tooltip{
+      padding:15px;
+      background-color:#D9D9D9;
+      font-size:10px;
+      line-height:15px;
+      font-family: 'Visby CF';
+      font-weight:normal;
+      color:#5D5D5D;
+      max-width:184px;
+      text-transform:none;
+      text-align:left;
+      right: 0px;
+      top:-70px!important;
+      bottom:unset;
+      margin: 0px 0px 0px auto;
+
+      .react-tooltip-arrow{
+        left: unset!important;
+        right: 52px!important;
+
+        ${Media.md}{
+          top: 56px!important;
+        }
+      }
+      [data-tooltip-content]{
+        position: relative;
+        right:0px;
+        
+      }
+    }
+    a {
       margin-right: 46px;
       cursor: pointer;
     }

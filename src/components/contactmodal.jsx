@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Select from "react-dropdown-select";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
+import 'react-tooltip/dist/react-tooltip.css';
+import { Tooltip } from 'react-tooltip';
 
 
 // styles
@@ -44,7 +46,13 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                 <p>
                   {" "}
                   Deine Erreichbarkeit{" "}
-                  <span>
+                  
+                  <a
+                      data-tooltip-id="my-tooltip" data-trigger="hover"
+                      data-tooltip-content="Wähle ein Zeitfenster, in dem wir Dich erreichen Können."
+                      data-tooltip-place="top"
+                    >
+                    <span>
                     {" "}
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                       <path
@@ -53,6 +61,8 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                       />
                     </svg>{" "}
                   </span>
+                  </a>  
+                  <Tooltip id="my-tooltip" className="custom-tooltip"/>    
                 </p>
               </Customemodalgroup>
             </Customemodalrow>
