@@ -11,10 +11,12 @@ import {
 import { Customaccordian } from "../assets/style";
 
 const Accordian = () => {
+
+
   return (
     <>
       <Customaccordian>
-        <Accordion>
+        <Accordion allowZeroExpanded>
           <AccordionItem>
             <AccordionItemHeading>
               <AccordionItemButton>

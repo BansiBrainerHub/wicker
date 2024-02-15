@@ -1772,12 +1772,13 @@ export const Customemodalgroup = styled.div`
     letter-spacing: -1px;
     font-family: 'Visby CF';
     font-weight:500;
+    color: rgb(0 0 0 / 30%);
     &::placeholder {
       color: rgb(0 0 0 / 50%);
     }
   }
 
-  .css-wmy1p7-ReactDropdownSelect {
+  .custom-dropdown {
     border: 1px solid #d9d9d9 !important;
     border-radius: 5px;
     height: 50px !important;
@@ -1789,9 +1790,13 @@ export const Customemodalgroup = styled.div`
     color: rgb(0 0 0 / 50%);
     font-family: 'Visby CF';
     font-weight:500;
+    
     input{
       font-size:20px;
       margin-left:0px;
+      border-radius: 5px;
+      // height: 50px;
+      // padding: 9px 15px 5px;
     
     &::placeholder{
       text-transform:uppercase;
@@ -1851,6 +1856,7 @@ export const Customemodalgroup1 = styled.div`
     letter-spacing: -1px;
     font-family: 'Visby CF';
     font-weight:500;
+    color: rgb(0 0 0 / 30%);
     &::placeholder {
       color: rgb(0 0 0 / 50%);
       font-family: 'Visby CF';
@@ -1871,7 +1877,7 @@ export const Customemodalgroup1 = styled.div`
     font-family: 'Visby CF';
     font-weight:500;
     resize: vertical;
-   
+    color: rgb(0 0 0 / 30%);
     &::placeholder {
       color: rgb(0 0 0 / 50%);
       font-family: 'Visby CF';

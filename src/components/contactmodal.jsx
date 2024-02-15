@@ -3,6 +3,7 @@ import Select from "react-dropdown-select";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 
+
 // styles
 import {
   Customemodal,
@@ -64,7 +65,7 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                 ></input>
               </Customemodalgroup>
               <Customemodalgroup className="form-group">
-                <Select options={options} />
+                <Select options={options} className="custom-dropdown" />
               </Customemodalgroup>
             </Customemodalrow>
             <Customemodalrow>
