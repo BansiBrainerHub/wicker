@@ -32,7 +32,7 @@ const OwlCarouselSlider = () => {
         center: false,
       },
       600: {
-        items: 2.5,
+        items: 3,
         center: false,
       },
       1000: {

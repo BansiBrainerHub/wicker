@@ -75,8 +75,8 @@ const Home = () => {
                     <p>
                       Wicker <span>&</span> Partner <span>-</span> Seit zwei
                       Generationen <strong> Ihr Partner </strong> im
-                      nachhaltigen Aufbau von Privatvermögen durch innovative
-                      Immobilienlösungen.
+                      nachhaltigen Aufbau von Privatverm<span>ö</span>gen durch innovative
+                      Immobilienl<span>ö</span>sungen.
                     </p>
                   </Bannerleftcontent>
                 </Column>
@@ -247,7 +247,7 @@ const Home = () => {
               <Column className="col-md-5 col-12">
                 <Teamdiscription>
                   <p>
-                    Wicker <span> & </span> Partner, als famili<span>ä</span>res Unternehmen
+                    Wicker <span className="spec-char"> & </span> Partner, als famili<span>ä</span>res Unternehmen
                     mit mehr als zwei Generationen Erfahrung im Aufbau von
                     Privatverm<span>ö</span>gen durch Immobilien, bieten wir unseren Kunden
                     umfassende L<span>ö</span>sungen.
@@ -309,8 +309,7 @@ const Home = () => {
             </h2>
             <p>
               Unser Team von Experten arbeitet kontinuierlich daran, innovative
-              L<span>ö</span>sungen zu finden und die Erwartungen unserer Mandanten zu
-              <span>ü</span>bertreffen. Unsere Erfolge sind das Ergebnis einer engen
+              L<span>ö</span>sungen zu finden und die Erwartungen unserer Mandanten zu <span>ü</span>bertreffen. Unsere Erfolge sind das Ergebnis einer engen
               Zusammenarbeit mit unseren Mandanten, transparenten Kommunikation
               und dem Streben nach h<span>ö</span>chster Qualit<span>ä</span>t in jedem Schritt des
               Projektzyklus.

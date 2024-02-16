@@ -475,8 +475,7 @@ export const Innovationcontent = styled.div`
     }
     span{
       ${Media.md} {
-        font-family: 'Helvetica';
-        font-weight: 600;
+        font-family: 'Montserrat';
       }
     }
     ${Media.lg} {
@@ -679,6 +678,8 @@ export const Teamcardcontent = styled.div`
     font-weight: 400;
     ${Media.md} {
       font-size: 24px;
+      line-height:30px;
+      margin-bottom:12px;
     }
     ${Media.sm} {
       font-size: 40px;
@@ -729,6 +730,14 @@ export const Teamdiscription = styled.div`
     line-height: 32px;
     font-family: 'Visby CF';
     span {
+      &.spec-char{
+        font-family: 'Montserrat';
+        font-weight: 400;
+        ${Media.md} {
+          font-family: 'Helvetica';
+          font-weight: 500;
+        }
+      }
       ${Media.md} {
         font-family: 'Montserrat';
         font-weight: 500;
@@ -900,7 +909,7 @@ export const Bindingwrapper = styled.div`
   height: 325px;
   border-radius: 100%;
   background-color: #000;
-  margin: -40px 0 30px auto;
+  margin: -40px 0 0px auto;
   position: relative;
   // display: flex;
   // justify-content: center;
@@ -909,7 +918,7 @@ export const Bindingwrapper = styled.div`
   ${Media.md} {
     max-width: 223px;
     height: 223px;
-    margin-top: -110px;
+    margin-top: -90px;
     // margin-right: -10px;
     right: -20px;
   }
@@ -979,8 +988,12 @@ export const Bindingcontent = styled.div`
 export const Footersection = styled.div`
   margin-left: 40px;
   margin-right: 40px;
-  ${Media.sm} {
+  margin-top:-50px;
+  ${Media.md} {
     margin-top: 40px;
+  }
+  ${Media.sm} {
+    margin-top: 53px;
   }
 `;
 
@@ -1053,6 +1066,7 @@ export const Customrow = styled.div`
   }
 `;
 export const Customcolumn = styled.div`
+
   .customRow {
     flex-wrap: nowrap;
     ${Media.sm} {
@@ -1060,6 +1074,7 @@ export const Customcolumn = styled.div`
         width: 50%;
       }
     }
+    
     input {
       margin-bottom: 0;
     }
@@ -1140,6 +1155,7 @@ export const InoutField = styled.div`
     ${Media.sm} {
       margin-bottom: 10px;
       font-size: 14px;
+      height: 44px;
     }
   }
   ::placeholder {
@@ -1204,6 +1220,12 @@ export const Checkbox = styled.div`
     margin-top: 30px;
     color: #8e8e8e;
     font-family: 'Visby CF';
+    ${Media.md} {
+      margin-top: 13px;
+    }
+    ${Media.sm} {
+      margin-top: 26px;
+    }
     ${Media.xs} {
       font-size: 12px;
     }
@@ -1341,6 +1363,16 @@ export const Fbcolumn2 = styled.div`
       font-family: "Roboto";
       font-weight:400;
     }
+    img{
+      width:14px;
+      height:14px;
+      object-fit:contain;
+      position:relative;
+      top:1px;
+      ${Media.md} {
+        top:3px;
+      }
+    }
   }
 `;
 export const Fbcolumn3 = styled.div`
@@ -1383,6 +1415,9 @@ export const Customaccordian = styled.div`
       font-weight: 200;
       font-family: "Montserrat";
       font-weight:300;
+      &:last-child{
+        margin-bottom:0px;
+      }
       ${Media.md} {
         font-size: 16px;
       }
@@ -1398,6 +1433,10 @@ export const Customaccordian = styled.div`
     line-height: 48px;
     font-family: 'Visby CF';
     background-color: transparent;
+
+    p{
+      font-weight:400;
+    }
     &:hover {
       background-color: transparent;
     }
@@ -1415,7 +1454,10 @@ export const Customaccordian = styled.div`
       z-index: 9;
       top: 15px;
       ${Media.md} {
-        top: -5px;
+        top: -4px;
+      }
+      ${Media.sm} {
+        top: -8px;
       }
     }
     &:after {
@@ -1431,6 +1473,9 @@ export const Customaccordian = styled.div`
       z-index: 9;
       ${Media.md} {
         top: 3px;
+      }
+      ${Media.sm} {
+        top: -1px;
       }
     }
     ${Media.md} {
@@ -1450,7 +1495,7 @@ export const Customaccordian = styled.div`
     margin-bottom:40px;
     border-top:0px;
     ${Media.md} {
-      padding-top: 30px;
+      padding-top: 20px;
     }
     ${Media.sm} {
       padding-top: 0px;

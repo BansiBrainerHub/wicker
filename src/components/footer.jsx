@@ -26,6 +26,9 @@ import {
   Mobileftbottom,
 } from "../../src/assets/style.jsx";
 
+// images
+import CopyrightIcon from "../../src/assets/images/copyright-icon.svg";
+
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
@@ -119,7 +122,7 @@ const Footer = () => {
               </Fbcolumn1>
               <Fbcolumn2>
                 <p>
-                  © 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
+                  <img src={CopyrightIcon} alt=""/> 202<span>4</span> Wicker <span> &</span> Partners GmbH{" "}
                 </p>
               </Fbcolumn2>
               <Fbcolumn3 onClick={scrollToTop}>
