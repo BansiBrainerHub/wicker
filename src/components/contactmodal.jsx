@@ -42,7 +42,7 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                   placeholder="Vor-und Nachname"
                 ></input>
               </Customemodalgroup>
-              <Customemodalgroup>
+              {/* <Customemodalgroup>
                 <p>
                   {" "}
                   Deine Erreichbarkeit{" "}
@@ -64,7 +64,7 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                   </a>  
                   <Tooltip id="my-tooltip" className="custom-tooltip"/>    
                 </p>
-              </Customemodalgroup>
+              </Customemodalgroup> */}
             </Customemodalrow>
             <Customemodalrow>
               <Customemodalgroup>
@@ -75,7 +75,7 @@ const ContactModal = ({ openFirst, handleModalClose }) => {
                 ></input>
               </Customemodalgroup>
               <Customemodalgroup className="form-group">
-                <Select options={options} className="custom-dropdown" />
+                <Select options={options} className="custom-dropdown" placeholder="Deine Erreichbarkeit" />
               </Customemodalgroup>
             </Customemodalrow>
             <Customemodalrow>

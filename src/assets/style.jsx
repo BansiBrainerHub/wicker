@@ -1149,7 +1149,6 @@ export const InoutField = styled.div`
     padding: 15px 12px 12px 12px;
     height: 54px;
     font-size: 19px;
-    outline: 1px solid #d7d7d7;
     color: #111725;
     font-family: 'Visby CF';
     ${Media.sm} {
@@ -1980,7 +1979,7 @@ export const Customemodalgroup1 = styled.div`
     margin-top: 10px;
     margin-bottom: 0px;
     color: #000;
-    font-size: 10px;
+    font-size: 12px;
     line-height:12px;
     padding-left: 30px;
     .checkmark:after {
